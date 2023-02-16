@@ -1,0 +1,109 @@
+/* START BACKGROUND-IMAGE.SCSS */
+
+.background-image {
+    background: #1A2C17;
+    padding: 90px 0;
+    position: relative;
+    background-image: url(../../assets/images/trace.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media #{$desktop} {
+        padding: 107px 0 127px 0;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        background: url(../../assets/images/border-green.svg);
+        background-repeat: repeat-x;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: -23px;
+        max-height: 24px;
+    }
+
+    &::after {
+        top: initial;
+        bottom: -23px;
+        transform: rotate(180deg);
+        z-index: 1;
+    }
+
+    .texture {
+        &::before {
+            @media #{$desktop} {
+                content: url(../../assets/images/trace-before.svg);
+                position: absolute;
+                left: 0;
+                width: 100%;
+            }
+        }
+
+        &::after {
+            @media #{$desktop} {
+                content: url(../../assets/images/trace-after.svg);
+                position: absolute;
+                right: 0;
+                bottom: 0
+            }
+        }
+
+        p {
+            font-family: 'Roboto Slab';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 130%;
+            text-align: center;
+            color: #FFFFFF;
+    
+            @media #{$desktop} {
+                font-weight: 300;
+                font-size: 32px;
+            }
+    
+            strong {
+                font-weight: 600;
+            }
+        }
+    
+        .image {
+            width: 155px;
+            height: 155px;
+            border: 3px solid $lighter-grey;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 86px auto 32px auto;
+    
+            img {
+                width: 48px;
+                height: 48px;
+            }
+        }
+    
+        .text {
+            font-family: 'Roboto Slab';
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 120%;
+            text-align: center;
+            color: #FFFFFF;
+            max-width: 629px;
+            margin: auto;
+    
+            @media #{$desktop} {
+                font-size: 48px;
+            }
+        }
+    
+        .owl-dots {
+            margin-top: 130px;
+        }
+    }
+}
+
+/* END BACKGROUND-IMAGE.SCSS */

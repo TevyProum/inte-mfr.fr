@@ -1,0 +1,512 @@
+/* START HEADER.SCSS */
+
+header {
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    position: relative;
+    transition: background-color 0.4s ease-in-out;
+
+    @media #{$laptop} {
+        flex-direction: column-reverse;
+    }
+
+    &.fixed {
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+        top: 0;
+        background-color: white;
+        overflow-y: auto;
+
+        @media #{$laptop} {
+            background: initial;
+            height: fit-content;
+        }
+    }
+
+    &.-background {
+        @media #{$laptop} {
+            background-color: white;
+            color: $black!important;
+
+            a, li {
+                color: $black;
+            }
+        }
+    }
+}
+
+.header__toggle {
+    height: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease-in-out;
+
+    &.-display {
+        height: 100%;
+        opacity: 1;
+    }
+
+    @media #{$laptop} {
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+.header__top {
+    display: none;
+    flex-direction: column;
+    background: $black;
+    align-items: center;
+    color: $light-grey;
+    padding: 56px 0;
+    border-bottom: 1px solid $grey;
+    transition: opacity 0.4s ease-in-out;
+
+    @media #{$laptop} {
+        display: flex!important;
+        justify-content: center;
+        gap: 64px;
+        flex-direction: row;
+        background: transparent;
+        color: $dark-grey;
+        padding: 28px 0 0 0;
+        order: -1;
+    }
+
+    &.-display {
+        display: block;
+    }
+
+    &.-white {
+        color: white;
+
+        .preheader-link.-external {
+            &::after {
+                filter: brightness(0) invert(1);
+            }
+
+            &:hover {
+                &::after {
+                    filter: none;
+                }
+            }
+        }
+    }
+    
+    .preheader-link {
+        font-family: 'Work Sans';
+        display: flex;
+        gap: 9.5px;
+        transition: color 0.3s ease-in-out;
+        height: fit-content;
+        width: fit-content;
+        padding-bottom: 12px;
+        margin: 0 auto 32px auto;
+
+        @media #{$laptop} {
+            margin: initial;
+
+        }
+    
+        &:hover {
+            color: $ocre;
+        }
+
+        &.-external {
+            &::after {
+                content: url('../../assets/images/icon-external-link.svg');
+                filter: brightness(0) invert(1);
+                transition: filter 0.3s ease-in-out;
+
+                @media #{$laptop} {
+                    filter: brightness(0)
+                }
+            }
+
+            &:hover {
+                &::after {
+                    filter: none;
+                }
+            }
+        }
+    
+        &.-active {
+            color: $ocre;
+            border-bottom: 1px solid $ocre;
+    
+            &::after {
+                filter: none;
+            }
+        }
+    }
+}
+
+.header__bottom {
+    padding: 0;
+    display: none;
+
+    &.-display {
+        display: block;
+    }
+
+    @media #{$laptop} {
+        display: block!important;
+
+        &.-white {
+            color: white;
+    
+            .links {
+                .parent::after {
+                    content: url('../../assets/images/icon-arrow-down-white.svg');
+                    border: 1px solid white;
+                }
+            }
+    
+            .btn {
+                color: $ocre;
+                border: 1px solid $ocre;
+    
+                &::after {
+                    content: url('../../assets/images/icon-zoom-ocre.svg');
+                    height: 24px;
+                }
+    
+                &:hover {
+                    color: $black;
+    
+                    &::after {
+                        content: url('../../assets/images/icon-zoom.svg');
+                    }
+                }
+            }
+        }
+    }
+
+    .logo {
+        max-height: 40px;
+
+        @media #{$desktop} {
+            max-height: initial;
+        }
+    }
+
+    .menu {
+        position: relative;
+        z-index: 1;
+        background: white;
+
+        @media #{$laptop} {
+            background: initial;
+        }
+        
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            padding: 0 24px;
+
+            @media #{$laptop} {
+                align-items: center;
+                flex-direction: row;
+                padding: 0 52px;
+            }
+
+            .-desktop {
+                display: none;
+
+                @media #{$laptop} {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 100%;
+        margin: 48px 0 58px 0;
+
+        @media #{$laptop} {
+            flex-direction: row;
+            align-items: center;
+            gap: 32px;
+            width: initial;
+        }
+
+        @media #{$desktop} {
+            gap: 64px;
+        }
+
+        li {
+            font-family: 'Work Sans';
+            height: fit-content;
+            font-weight: 500;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+            border-bottom: 1px solid $grey;
+            padding-bottom: 24px;
+            margin: 0;
+
+            @media #{$laptop} {
+                border-bottom: 0;
+                padding-bottom: 0;
+                font-size: 16px;
+            }
+        
+            &:hover {
+                color: $ocre;
+            }
+
+            &::before {
+                display: none;
+            }
+
+            &:last-child {
+                padding-bottom: 0;
+                border-bottom: 0;
+            }
+        }
+
+        .parent {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            align-items: initial;
+            cursor: pointer;
+
+            @media #{$laptop} {
+                align-items: center;
+                flex-direction: row;
+                gap: 8px;
+            }
+        
+            &:hover {
+                color: $ocre;
+        
+                &::after {
+                    background-color: $ocre;
+                    border: 1px solid $ocre;
+                }
+            }
+        
+            &::after {
+                content: url('../../assets/images/icon-arrow-down.svg');
+                border: 1px solid $black;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out, transform 0.3s ease-in-out;
+                padding-bottom: 3px;
+                position: absolute;
+                right: 24px;
+
+                @media #{$laptop} {
+                    position: relative;
+                    right: initial;
+                }
+            }
+
+            &.opened {
+                &::after {
+                    content: url('../../assets/images/icon-arrow-down.svg');
+                    border: 1px solid $black;
+                    transform: rotate(180deg);
+                }
+
+                &:hover::after {
+                    border-color: $ocre;
+                }
+
+                .submenu {    
+                    height: 350px;
+                    opacity: 1;
+                    pointer-events: initial;
+
+                    @media #{$laptop} {
+                        height: 194px;
+                        background: white;
+                        color: $black!important;
+                    }
+                }
+            }
+
+            .submenu {
+                width: 100%;
+                left: 0;
+                height: 0;
+                opacity: 0;
+                gap: 16px;
+                pointer-events: none;
+                transition: background-color 0.4s ease-in-out, opacity 0.4s ease-in-out, height 0.4s ease-in-out;
+            
+                @media #{$laptop} {
+                    position: absolute;
+                    z-index: 0;
+                    top: 100%;
+                    box-shadow: 0px 65px 52px rgba(0, 0, 0, 0.2);
+                }
+            
+                .container {
+                    padding: 0!important;
+                    flex-direction: column!important;
+                    margin-top: 24px;
+            
+                    @media #{$laptop} {
+                        padding: 0 52px!important;
+                        flex-direction: row!important;
+                        margin-top: 0;
+                    }
+            
+                    article {
+                        transition: background-color 0.3s ease-in-out;
+                        margin-bottom: 20px;
+                        display: flex;
+                        align-items: center;
+                        gap: 24px;
+                
+                        @media #{$laptop} {
+                            padding: 16px;
+                            max-width: 435px;
+                            margin-bottom: 0;
+                        }
+            
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+            
+                        &:hover {
+                            background-color: $lighter-grey;
+                            border-radius: 8px;
+                
+                            .image {
+                                &::after {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+
+                        a {
+                            display: flex;
+                            align-items: center;
+                            gap: 24px;
+                        }
+                
+                        .image {
+                            position: relative;
+                            width: 100%;
+                            height: 94px;
+                            max-width: 108px;
+            
+                            @media #{$laptop} {
+                                height: 130px;
+                                max-width: 187px;
+                            }
+                
+                            &::after {
+                                content: url('../../assets/images/plus-dropdown.svg');
+                                position: absolute;
+                                background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+                                width: 100%;
+                                height: 100%;
+                                top: 0;
+                                left: 0;
+                                border-radius: 8px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                transition: opacity 0.3s ease-in-out;
+                                opacity: 0;
+                            }
+                
+                            img {
+                                border-radius: 8px;
+                                object-fit: cover;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                
+                        .title {
+                            font-family: 'Work Sans';
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 120%;
+                            color: black;
+                            margin-bottom: 8px;
+            
+                            @media #{$laptop} {
+                                font-size: 20px;
+                            }
+                        }
+                
+                        p {
+                            font-family: 'Work Sans';
+                            font-weight: 400;
+                            font-size: 11px;
+                            line-height: 150%;
+                            color: $dark-grey;
+            
+                            @media #{$laptop} {
+                                font-weight: 500;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .brush {
+        content: url('../../assets/images/brush.svg');
+        width: 100%;
+    
+        @media #{$laptop} {
+            display: none;
+        }
+    }
+}
+
+.header__mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 24px 0 32px 0;
+
+    @media #{$laptop} {
+        display: none;
+    }
+
+    .logo {
+        max-height: 40px;
+    }
+
+    .burger {
+        content: url('../../assets/images/burger-black.svg');
+        display: flex;
+        height: 40px;
+        width: 40px;
+
+        &.-closed {
+            content: url('../../assets/images/burger-close.svg');
+            filter: initial!important
+        }
+    }
+
+    &.-white {
+        .burger {
+            filter: brightness(0) invert(1);
+        } 
+    }
+}
+
+/* END HEADER.SCSS */

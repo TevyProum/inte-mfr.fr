@@ -1,0 +1,268 @@
+/* START CONTACT-FORM.SCSS */
+
+.contact-form {
+    margin: 64px auto;
+
+    @media #{$laptop} {
+        display: grid;
+        grid-template-columns: 43% 48%;
+        gap: 40px;
+        justify-content: space-between;
+        margin: 80px auto 112px auto;
+    }
+
+    &__title {
+        font-family: 'Work Sans';
+        text-align: center;
+        margin-bottom: 33px;
+        height: fit-content;
+
+        @media #{$laptop} {
+            text-align: left;
+            margin-bottom: 0;
+            grid-column: 1;
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 120%;
+            margin: 16px 0 40px 0;
+
+            @media #{$laptop} {
+                font-size: 48px;
+                margin: 24px 0;
+            }
+        }
+    }
+
+    &__form {
+        @media #{$laptop} {
+            grid-column: 2;
+            grid-row: 1 / 3;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 120%;
+            margin-bottom: 40px;
+            padding-left: 32px;
+            border-left: 1px solid $ocre;
+
+            @media #{$laptop} {
+                margin-bottom: 48px;
+                font-size: 32px;
+                line-height: 130%;
+            }
+        }
+
+        form {
+            position: relative;
+
+            .obligatoire {
+                position: relative;
+                font-size: 14px;
+                line-height: 150%;
+                margin-top: 24px;
+                text-align: center;
+
+                @media #{$laptop} {
+                    position: absolute;
+                    bottom: 0;
+                    margin-top: 0;
+                }
+            }
+
+            .asterisk {
+                color: $ocre;
+            }
+
+            .input_container {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+
+                @media #{$laptop} {
+                    flex-direction: row;
+                }
+            }
+
+            .field {
+                margin-bottom: 24px;
+                flex-basis: 47.5%;
+
+                @media #{$laptop} {
+                    margin-bottom: 32px;
+                }
+
+                input {
+                    margin-top: 8px;
+                }
+    
+                label {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: $dark-grey;
+                }
+            }
+
+            .input_container_select {
+                position: relative;
+
+                &::after {
+                    content: url('../../assets/images/icon-arrow-down.svg');
+                    position: absolute;
+                    right: 10px;
+                    top: 38%;
+                    pointer-events: none;
+                }
+            }
+    
+            .input_container_consent {
+                display: flex;
+                gap: 12px;
+                margin-top: 32px;
+
+                label {
+                    font-weight: 400;
+                    font-size: 12px;
+                }
+
+                input {
+                    max-width: 24px;
+                    width: 100%;
+                    height: 24px;
+                    padding: 0;
+                    position: relative;
+
+                    &:checked::after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 2px;
+                        left: 8px;
+                        width: 7px;
+                        height: 14px;
+                        border: solid $black;
+                        border-width: 0 2px 2px 0;
+                        transform: rotate(45deg);
+                        pointer-events: none;
+                    }
+                }
+            }
+    
+            .form_footer {
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;
+
+                @media #{$laptop} {
+                    justify-content: flex-end;
+                }
+    
+                input {
+                    background: $black;
+                    border: 1px solid $black;
+                    border-radius: 50px;
+                    color: white;
+                    width: max-content;
+                    font-family: 'Work Sans';
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    padding: 12px 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &__redirection {
+        margin: 56px 0;
+        
+        @media #{$laptop} {
+            margin: 0;
+            grid-column: 1;
+            grid-row: 2 / 3;
+        }
+
+        .card {
+            padding: 28px 24px;
+            color: white;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &:hover {
+                .-contact {
+                    background: $black;
+
+                    &::after {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+            }
+
+            .uptitle {
+                color: white;
+                letter-spacing: 0;
+                line-height: 150%;
+            }
+
+            h3 {
+                font-family: 'Work Sans';
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 130%;
+                margin-top: 4px;
+            }
+
+            .-contact {
+                &::after {
+                    content: '';
+                    background: url('../../assets/images/icon-arrow-next-black.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+
+            &.-famille {
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/faq-famille.jpg);
+                background-size: 100%;
+                background-position: center;
+            }
+
+            &.-entreprise {
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/faq-entreprise.jpeg);
+                background-size: 100%;
+                background-position: center;
+            }
+
+            &.-partenaires {
+                background: $ocre;
+                color: $black;
+
+                .uptitle {
+                    color: $black;
+                }
+
+                .-contact {
+                    background: $black;
+
+                    &::before {
+                        border: 1px dashed $black;
+                    }
+
+                    &::after {
+                        filter: invert(1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END CONTACT-FORM.SCSS */

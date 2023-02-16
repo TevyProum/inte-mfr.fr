@@ -1,0 +1,112 @@
+/* START BACKGROUND-BLOC.SCSS */
+
+.background-bloc {
+    background: $ocre;
+    padding: 80px 0;
+    position: relative;
+
+    @media #{$laptop} {
+        padding: 152px 0;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        background: url(../../assets/images/border-yellow.svg);
+        background-repeat: repeat-x;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: -23px;
+        max-height: 24px;
+    }
+
+    &::after {
+        top: initial;
+        bottom: -23px;
+        transform: rotate(180deg);
+        z-index: 1;
+    }
+
+    img {
+        position: absolute;
+        height: 100%;
+        width: 80%;
+        z-index: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+
+        @media #{$laptop} {
+            bottom: 0;
+            height: 400px;
+            width: 100%;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+
+        @media #{$laptop} {
+            flex-direction: row;
+        }
+
+        .background-bloc__text {
+            max-width: 450px;
+            margin: auto;
+            text-align: center;
+    
+            @media #{$laptop} {
+                margin: 0;
+                text-align: initial;
+            }
+    
+            .uptitle {
+                color: $black;
+            }
+    
+            h2 {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 130%;
+                margin: 8px auto 0 auto;
+    
+                @media #{$laptop} {
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 150%;
+                    margin: 16px 0 0 0;
+                }  
+            }
+
+            &.-large {
+                max-width: 520px;
+            }
+        }
+
+        .black-btn {
+            margin: 215px auto 0 auto;
+
+            @media #{$laptop} {
+                margin: 0;
+            } 
+        }
+
+        .black-plus-btn {
+            @media #{$phone} {
+                .text {
+                    width: 256px;
+                    left: -100px;
+                }
+            } 
+        }
+    }
+}
+
+/* END BACKGROUND-BLOC.SCSS */

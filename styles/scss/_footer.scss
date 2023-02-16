@@ -1,0 +1,222 @@
+/* START FOOTER.SCSS */
+
+footer {
+    background-color: $black;
+    color: white;
+    padding: 56px 0;
+
+    .container {
+        padding: 0 24px;
+
+        @media #{$tablet} {
+            padding: 0 80px;
+        }
+
+        a {
+            font-family: 'Work Sans';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            transition: color 0.3s ease-in-out;
+        
+            &:hover {
+                color: $ocre;
+            }
+
+            &.-external {
+                &::after {
+                    content: url('../../assets/images/icon-external-link.svg');
+                    filter: brightness(0) invert(1);
+                    padding-left: 7.5px;
+                    transition: filter 0.3s ease-in-out;
+                }
+
+                &:hover::after {
+                    filter: none;
+                }
+            }
+        }
+    }
+
+    .footer__top {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @media #{$desktop} {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .logo {
+            max-width: 305px;
+            margin: auto;
+            text-align: center;
+
+            @media #{$desktop} {
+                margin: initial;
+                text-align: initial;
+            }
+
+            img {
+                max-height: 56px;
+                margin-bottom: 32px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+            }
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+
+            @media #{$tablet} {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            @media #{$desktop} {
+                gap: 113px;
+            }
+
+            ul {
+                font-family: 'Work Sans';
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                text-transform: uppercase;
+                margin-bottom: 16px;
+                text-align: center;
+
+                @media #{$tablet} {
+                    margin-bottom: 0;
+                    text-align: initial;
+                }
+
+                li {
+                    margin-bottom: 16px;
+                    text-transform: none;
+                    justify-content: center;
+
+                    @media #{$tablet} {
+                        justify-content: initial;
+                    }
+        
+                    &::before {
+                        display: none;
+                    }
+
+                    &:first-child {
+                        margin-top: 24px;
+                    }
+                }
+            }
+
+            .buttons {
+                margin: auto;
+
+                @media #{$tablet} {
+                    margin: initial;
+                }
+            }
+        }
+
+        .btn {
+            color: white;
+            border-color: white;
+            margin-bottom: 24px;
+            transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+            @media #{$tablet} {
+                margin-bottom: 32px;
+            }
+
+            &:hover {
+                border-color: $ocre;
+                color: white;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &.-mymfr {
+                color: $ocre;
+                border-color: $ocre;
+                width: 256px;
+
+                &::after {
+                    content: url('../../assets/images/icon-user.svg');
+                    filter: none;
+                }
+
+                &:hover {
+                    color: white;
+
+                    &::after {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+            }
+        }
+
+        .btn:not(.-mymfr) {
+            &::after {
+                filter: invert(1);
+            }
+        }
+    }
+
+    .footer__bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        font-family: 'Work Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        padding-top: 32px;
+        margin-top: 32px;
+        border-top: 1px solid $dark-grey;
+
+        @media #{$laptop} {
+            flex-direction: row;
+            align-items: initial;
+        }
+    
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+
+            @media #{$tablet} {
+                flex-direction: row;
+                align-items: initial;
+                gap: 48px;
+            }
+        }
+    
+        .social {
+            display: flex;
+            gap: 32px;
+
+            a {
+                filter: brightness(0) invert(1);
+                transition: filter 0.3s ease-in-out;
+
+                &:hover {
+                    filter: none;
+                }
+            }
+        }
+    }
+}
+
+/* END FOOTER.SCSS */

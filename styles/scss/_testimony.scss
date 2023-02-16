@@ -1,0 +1,119 @@
+/* START TESTIMONY.SCSS */
+
+.testimony {
+    overflow: hidden;
+    margin: 88px auto;
+
+    @media #{$laptop} {
+        margin: 144px auto;
+    }
+
+    .container {
+        position: relative;
+
+        @media #{$laptop} {
+            display: flex;
+            height: 510px;
+        }
+    }
+
+    &__title {
+        flex-basis: 53%;
+        text-align: center;
+
+        @media #{$laptop} {
+            text-align: left;
+        }
+
+        h2 {
+            margin-top: 8px;
+        }
+    }
+
+    .owl-carousel .owl-stage-outer {
+        @media #{$laptop} {
+            position: absolute;
+            left: 33px;
+        }
+
+        article {
+            margin-top: 40px;
+
+            @media #{$laptop} {
+                width: 336px;
+                margin-top: 0;
+            }
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 157px;
+
+                @media #{$large-phone} {
+                    height: 300px;
+                }
+
+                @media #{$laptop} {
+                    height: 157px;
+                }
+            }
+    
+            h3 {
+                font-family: 'Roboto';
+                font-style: italic;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                text-align: center;
+                margin: 24px 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+
+                @media #{$laptop} {
+                    font-size: 32px;
+                    line-height: 38px;
+                    text-align: left;
+                }
+            }
+
+            p {
+                text-align: center;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+
+                @media #{$laptop} {
+                    text-align: left;
+                }
+            }
+    
+            .btn {
+                margin: 24px auto;
+
+                @media #{$laptop} {
+                    margin: 40px 0 0 0;
+                }
+
+                &::after {
+                    content: url('../../assets/images/play-button.svg');
+                }
+            }
+        }
+    }
+
+   .arrow {
+       margin-top: 40px;
+
+       @media #{$laptop} {
+            position: absolute;
+            top: 27%
+        }
+   }
+}
+
+/* END TESTIMONY.SCSS */

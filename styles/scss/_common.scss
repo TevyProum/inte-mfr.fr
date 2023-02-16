@@ -1,0 +1,253 @@
+/* START COMMON.SCSS */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto';
+    color: $black;
+
+    &.overflow {
+        overflow: hidden;
+    }
+}
+
+h1 {
+    font-family: 'Roboto Slab';
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 120%;
+
+    @media #{$desktop} {
+        font-size: 48px;
+    }
+
+    strong {
+        font-weight: 600;
+    }
+}
+
+h2 {
+    font-family: 'Roboto Slab';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 130%;
+
+    @media #{$desktop} {
+        font-size: 48px;
+    }
+
+    strong {
+        font-weight: 700;
+    }
+}
+
+h3 {
+    font-family: 'Roboto Slab';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+
+    @media #{$desktop} {
+        font-size: 40px;
+    }
+}
+
+h4 {
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.uptitle {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: $ocre;
+
+    @media #{$desktop} {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+ul {
+    li {
+        display: flex;
+        gap: 13px;
+        margin-bottom: 8px;
+
+        &::before {
+            content: '';
+            height: 5px;
+            max-width: 5px;
+            width: 100%;
+            background: $ocre;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+p {
+    line-height: 150%;
+    
+    strong {
+        font-weight: 700;
+    }
+}
+
+input,
+textarea,
+select {
+    background: $lighter-grey;
+    border: 1px solid $grey;
+    border-radius: 4px;
+    padding: 12px 10px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+textarea {
+    height: 129px;
+}
+
+.dropdown {
+    position: relative;
+
+    &__container {
+        &::after {
+            content: url('../../assets/images/icon-arrow-down.svg');
+            position: absolute;
+            right: 10px;
+            top: 48%;
+            pointer-events: none;
+        }
+    }
+}
+
+// Containers
+.container {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 24px;
+
+    @media #{$desktop} {
+        padding: 0 112px;
+    }
+}
+
+// Show on desktop only 
+.-desktop {
+    display: none;
+
+    @media #{$tablet} {
+        display: block;
+    }
+}
+
+// Show on mobile only
+.-mobile {
+    @media #{$tablet} {
+        display: none;
+    }
+}
+
+// Dots 
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 32px;
+
+    .owl-dot {
+        width: 6px;
+        height: 6px;
+        background: $grey!important;
+        border-radius: 8px;
+        transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out;
+
+        &.active {
+            width: 64px;
+            background: $ocre!important;
+        }
+    }
+    
+}
+
+// Arrows 
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    .owl-prev,
+    .owl-next {
+        display: flex;
+
+        span {
+            content: url('../../assets/images/prev-arrow-ocre.svg');
+            filter: brightness(0);
+            transition: filter 0.2s ease-in-out;
+            cursor: pointer;
+        }
+
+        &:hover {
+            span {
+                filter: none;
+            }
+        }
+    }
+
+    .owl-next {
+        gap: 24px;
+
+        span {
+            transform: rotate(180deg);
+        }
+
+        &::before {
+            content: '';
+            background: $grey;
+            width: 0.5px;
+            height: 32px;
+        }
+    }
+}
+
+.lity {
+    background: rgba(0,0,0,0.8)!important;
+}
+
+.lity-content {
+    position: relative!important;
+}
+
+.lity-close {
+    position: absolute!important;
+    top: -60px!important;
+    color: transparent!important;
+    text-shadow: none!important;
+
+    &::after {
+        content: url('../../assets/images/burger-close.svg');
+        filter: invert(1);
+        position: absolute;
+        right: 0;
+    }
+}
+
+/* END COMMON.SCSS */

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFR - Contact</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/menu.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="header__mobile container">
+            <a href="index.html">
+                <img src="assets/images/logo-ocre.svg" alt="Logo MFR" class="logo">
+            </a>
+            <button class="burger"></button>
+        </div>
+        <div class="header__toggle">
+            <div class="header__bottom">
+                <div class="menu">
+                    <div class="container">
+                        <a href="index.html" class="-desktop">
+                            <img src="assets/images/logo-ocre.svg" alt="Logo MFR" class="logo">
+                        </a>
+                        <ul class="links">
+                            <!-- <li>
+                                <a href="">Qui sommes-nous</a>
+                            </li> -->
+                            <li class="parent">
+                                Formations
+                                <div class="submenu">
+                                    <div class="container">
+                                        <article>
+                                            <a href="presentation.html">
+                                                <div class="image">
+                                                    <img src="assets/images/hero-presentation.jpeg" loading="lazy">
+                                                </div>
+                                                <div>
+                                                    <p class="title">Présentation</p>
+                                                    <p>Notre modèle associatif vous intrigue ? Venez l’explorer en détail avec nous.</p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                        <article>
+                                            <a href="presentation.html#comment-trouver-formation" class="submenu2">
+                                                <div class="image">
+                                                    <img src="assets/images/submenu2.jpg" loading="lazy">
+                                                </div>
+                                                <div>
+                                                    <p class="title">Comment trouver une formation ?</p>
+                                                    <p>Vous avez besoin d’un coup de pouce pour trouver votre formation ? C’est par ici.</p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                        <article>
+                                            <a href="presentation.html#secteurs-formation" class="submenu3">
+                                                <div class="image">
+                                                    <img src="assets/images/submenu3.jpg" loading="lazy">
+                                                </div>
+                                                <div>
+                                                    <p class="title">Secteurs de formations</p>
+                                                    <p>Découvrez nos 18 secteurs métiers et plus de 350 qualifications.</p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="contact.html">Nous contacter</a>
+                            </li>
+                        </ul>
+                        <a href="trouver-formation.html" class="btn">Trouver une formation</a>
+                    </div>
+                </div>
+                <div class="brush"></div>
+            </div>
+            <div class="header__top">
+                <a href="https://mvt.mfr.fr/index.php/category/articles/" target="_blank" class="preheader-link -external">Actualités MVT</a>
+                <!-- <a href="recrutement.html" class="preheader-link">Recrutement</a> -->
+                <a href="partenaires.html" class="preheader-link">Partenaires</a>
+                <!-- <a href="" target="_blank" class="preheader-link -external">Presse</a> -->
+                <a href="mymfr.html" target="_blank" class="preheader-link -external">My MFR</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-form container">
+            <div class="contact-form__title">
+                <span class="uptitle">Nous contacter</span>
+                <h1>Un message pour notre Mouvement ? <strong>C’est ici...</strong></h1>
+                <p>
+                    Vous avez une question ? Besoin d’informations ? Vous pouvez nous laisser un message ou consulter directement une de nos FAQ.
+                </p>
+            </div>
+            <div class="contact-form__form">
+                <h2>Formulaire de <strong>contact</strong></h2>
+                <form>
+                    <div class="input_container">
+                        <div class="field">
+                            <label>Je suis ... <span class="asterisk">*</span></label>
+                            <div class="input_container_select">
+                                <select>
+                                    <option value="">Choisir un profil</option>
+                                    <option>Profil 1</option>
+                                    <option>Profil 2</option>
+                                </select>
+                            </div>
+                        </div>  
+                        <div class="field">
+                            <label>Ma demande concerne ... <span class="asterisk">*</span></label>
+                            <div class="input_container_select">
+                                <select>
+                                    <option value="">Choisir le sujet de votre message</option>
+                                    <option>Sujet 1</option>
+                                    <option>Sujet 2</option>
+                                </select>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="input_container">
+                        <div class="field">
+                            <label>Nom <span class="asterisk">*</span></label>
+                            <input />
+                        </div>
+                        <div class="field">
+                            <label>Prénom <span class="asterisk">*</span></label>
+                            <input />
+                        </div>
+                    </div>
+                    <div class="input_container">
+                        <div class="field">
+                            <label>Téléphone <span class="asterisk">*</span></label>
+                            <input />
+                        </div>
+                        <div class="field">
+                            <label>E-mail <span class="asterisk">*</span></label>
+                            <input />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Votre message <span class="asterisk">*</span></label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="input_container_consent">
+                        <input type="checkbox">
+                        <label>Ce message sera remis à un membre de l’Union nationale des MFR. Si vous souhaitez contacter directement une MFR, rendez-vous sur son site ou privilégiez son adresse mail ou son numéro de téléphone.</label>
+                    </div>
+                    <div class="form_footer">
+                        <input type="submit" value="Envoyer le message">
+                    </div>
+                    <div class="obligatoire"><span class="asterisk">*</span> Champs obligatoires</div>
+                </form>
+            </div>
+            <div class="contact-form__redirection">
+                <a href="mymfr.html">
+                    <div class="card -famille">
+                        <div>
+                            <span class="uptitle">FAQ</span>
+                            <h3>Famille</h3>
+                        </div>
+                        <div class="cta -contact"></div>
+                    </div>
+                </a>
+                <a href="mymfr.html">
+                    <div class="card -entreprise">
+                        <div>
+                            <span class="uptitle">FAQ</span>
+                            <h3>Entreprise</h3>
+                        </div>
+                        <div class="cta -contact"></div>
+                    </div>
+                </a>
+                <a href="mymfr.html">
+                    <div class="card -partenaires">
+                        <div>
+                            <span class="uptitle">FAQ</span>
+                            <h3>Élu / partenaires</h3>
+                        </div>
+                        <div class="cta -contact"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="container">
+            <div class="footer__top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo-ocre.svg" alt="Logo MFR">
+                    </a>
+                    <p>Nos Maisons vous propose des formations par alternance à partir de la 4ème jusqu’au bac + 5 dans 18 secteurs d’activités.</p>
+                </div>
+                <div class="links">
+                    <ul>Menu
+                        <!-- <li>
+                            <a href="">Qui sommes-nous ?</a>
+                        </li> -->
+                        <li>
+                            <a href="presentation.html">Formations</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Nous contacter</a>
+                        </li>
+                    </ul>
+                    <ul>liens utiles
+                        <li>
+                            <a href="https://mvt.mfr.fr/index.php/category/articles/" target="_blank" class="-external">Actualités MVT</a>
+                        </li>
+                      <!--   <li>
+                            <a href="recrutement.html">Recrutement</a>
+                        </li> -->
+                        <li>
+                            <a href="partenaires.html">Partenaires</a>
+                        </li>
+                        <!-- <li>
+                            <a href="" target="_blank" class="-external">Presse</a>
+                        </li> -->
+                    </ul>
+                    <div class="buttons">
+                        <a href="trouver-formation.html" class="btn">Trouver une formation</a>
+                        <a href="mymfr.html" class="btn -mymfr" role="button">Accéder à my MFR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="links">
+                    @2022 MFR. All rights reserved
+                    <a href="mentions.html">Mentions légales</a>
+                    <a href="rgpd.html">RGDP</a>
+                    <a href="plan-de-site.html">Plan de site</a>
+                </div>
+                <div class="social">
+                    <a href="https://fr-fr.facebook.com/mfr.asso.fr/" target="_blank">
+                        <img src="assets/images/icon-facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/mfr_officiel/?hl=fr" target="_blank">
+                        <img src="assets/images/icon-instagram.svg" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    
+</body>
+</html>

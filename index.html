@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFR</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owlcarousel/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/owl.carousel.min.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/gsap.js" defer></script>
+</head>
+<body class="home">
+
+    <header>
+        <div class="header__mobile container">
+            <a href="index.html">
+                <img src="assets/images/logo-ocre.svg" alt="Logo MFR" class="logo">
+            </a>
+            <button class="burger"></button>
+        </div>
+        <div class="header__toggle">
+            <div class="header__bottom">
+                <div class="menu">
+                    <div class="container">
+                        <a href="index.html" class="-desktop">
+                            <img src="assets/images/logo-ocre.svg" alt="Logo MFR" class="logo">
+                        </a>
+                        <ul class="links">
+                            <!-- <li>
+                                <a href="">Qui sommes-nous</a>
+                            </li> -->
+                            <li class="parent">
+                                Formations
+                                <div class="submenu">
+                                    <div class="container">
+                                        <article>
+                                            <a href="presentation.html">
+                                                <div class="image">
+                                                    <img src="assets/images/hero-presentation.jpeg" loading="lazy">
+                                                </div>
+                                                <div>
+                                                    <p class="title">Présentation</p>
+                                                    <p>Notre modèle associatif vous intrigue ? Venez l’explorer en détail avec nous.</p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                        <article>
+                                            <a href="presentation.html#comment-trouver-formation" class="submenu2">
+                                                <div class="image">
+                                                    <img src="assets/images/submenu2.jpg" loading="lazy">
+                                                </div>
+                                                <div>
+                                                    <p class="title">Comment trouver une formation ?</p>
+                                                    <p>Vous avez besoin d’un coup de pouce pour trouver votre formation ? C’est par ici.</p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                        <article>
+                                            <a href="presentation.html#secteurs-formation" class="submenu3">
+                                                <div class="image">
+                                                    <img src="assets/images/submenu3.jpg" loading="lazy">
+                                                </div>
+                                                <div>
+                                                    <p class="title">Secteurs de formations</p>
+                                                    <p>Découvrez nos 18 secteurs métiers et plus de 350 qualifications.</p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="contact.html">Nous contacter</a>
+                            </li>
+                        </ul>
+                        <a href="trouver-formation.html" class="btn">Trouver une formation</a>
+                    </div>
+                </div>
+                <div class="brush"></div>
+            </div>
+            <div class="header__top">
+                <a href="https://mvt.mfr.fr/index.php/category/articles/" target="_blank" class="preheader-link -external">Actualités MVT</a>
+                <!-- <a href="recrutement.html" class="preheader-link">Recrutement</a> -->
+                <a href="partenaires.html" class="preheader-link">Partenaires</a>
+                <!-- <a href="" target="_blank" class="preheader-link -external">Presse</a> -->
+                <a href="mymfr.html" target="_blank" class="preheader-link -external">My MFR</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <img class="image" src="assets/images/background.jpg">
+            <img class="first-plan" src="assets/images/premier-plan.png">
+            <div class="container">
+                <h1>
+                    <strong>Ensemble,</strong> 
+                    <br>cultivons les <strong>réussites</strong> 
+                    <br><span>grâce à la formation par l’alternance</span>
+                </h1>
+                <p>
+                    Venez vous former dans l’une de nos Maisons pour y construire votre projet de vie. 
+                    <br>Réalisez-le. Réalisez-vous.
+                </p>
+                <div class="scroll-btn">
+                    <a href="#scroll" class="text"><p>Découvrir <span>MFR</span></p></a>
+                    <a href="#scroll" class="cta" role="button"></a>
+                </div>
+            </div>
+            <div class="green-brush">
+                <img src="assets/images/hero-brush.svg">
+            </div>
+        </section>
+
+        <div id="scroll"></div>
+        
+        <!-- BLOC ABOUT : "Bienvenue dans votre maison" + "Vous souhaitez mieux comprendre MFR et ses actions ?" -->
+        <section class="about">
+            <div class="container">
+                <span class="uptitle">À propos</span>
+                <h2>Bienvenue dans <strong>votre Maison</strong></h2>
+                <p class="subtitle">Vous êtes à la recherche d’une formation ? Vous trouverez forcément celle qui vous fait envie dans l’une de nos Maisons. Grâce à l’alternance, non seulement vous découvrirez et apprendrez un métier mais vous vivrez également une belle aventure humaine. Faire de belles rencontres, développer son réseau, s’ouvrir aux autres et aux mondes, c’est ça l’expérience MFR !</p>
+                <ul class="owl-carousel">
+                    <li>
+                        <div>
+                            <img src="assets/images/picto-alternance.svg">
+                            <span>18</span>
+                            <p>secteurs d’activités au sein desquels vous êtes formé en alternance</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="assets/images/picto-competences.svg">
+                            <span>350</span>
+                            <p>qualifications pour développer vos compétences</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="assets/images/picto-partenariat.svg">
+                            <span>430</span>
+                            <p>Maisons en France et plus de 700 en partenariat dans le monde</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="know-more">
+            <video autoplay loop muted>
+                <source src="assets/images/video-hp-mfr.mp4" type="video/mp4">
+            </video>
+            <div class="container">
+                <h2>Vous souhaitez mieux comprendre <strong>MFR et ses actions ?</strong></h2>
+                <div class="more-hidden-btn">
+                    <a href="presentation.html" class="text"><p>En savoir <span>plus</span></p></a>
+                    <a href="presentation.html" class="cta" role="button"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOC QUOTE -->
+        <section class="quote">
+            <div class="container">
+                <div class="owl-carousel">
+                    <article>
+                        <p class="quote__title">Ça a été vraiment une grande chance. Un grand bonheur (...). Pour nous, c’était beaucoup plus serein de sentir notre fille apaisée dans un climat qui lui correspondait</p>
+                        <p class="quote__author">Valérie</p>
+                        <p class="quote__description">mère de Charlotte, élève en MFR</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOC SECTORS : "Découvrez nos 18 secteurs métiers" -->
+        <section class="sectors">
+            <div class="sectors__title container">
+                <div>
+                    <span class="uptitle">Secteurs de formations</span>
+                    <h2>
+                        Découvrez nos 
+                        <br><strong>18 secteurs métiers</strong>
+                    </h2>
+                </div>
+                <p>Pour apprendre, progresser ensemble et vivre de votre passion ! Grâce à la formation par alternance et l’accompagnement personnalisé de nos équipes, progressez à votre rythme avant de prendre votre envol.</p>
+            </div>
+            <ul class="owl-carousel">
+                <a href="secteur-agriculture.html">
+                    <li>
+                        <img src="assets/images/sectors1.jpg">
+                        <div class="card">
+                            <p><span>01</span>/18</p>
+                            <h3>
+                                Agriculture 
+                                <br>et élevage
+                            </h3>
+                            <div class="card__hover">
+                                <p>
+                                    Vous aimez le contact avec la nature et souhaitez renforcer vos connaissances ? Alors, les métiers de l’agriculture sont faits pour vous !
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="secteur-services-aux-personnes.html">
+                    <li>
+                        <img src="assets/images/sectors2.jpg">
+                        <div class="card">
+                            <p><span>02</span>/18</p>
+                            <h3>
+                                Services 
+                                <br>à la personne
+                            </h3>
+                            <div class="card__hover">
+                                <p>
+                                    Vous êtes en quête d’une aventure riche de sens ? Les métiers des services aux personnes sont faits pour vous. Émotions garanties !
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="secteur-cheval.html">
+                    <li>
+                        <img src="assets/images/sectors3.jpeg">
+                        <div class="card">
+                            <p><span>03</span>/18</p>
+                            <h3>
+                                Métiers 
+                                <br>du cheval
+                            </h3>
+                            <div class="card__hover">
+                                <p>
+                                    Envie de vivre des moments intenses ? Les métiers du cheval sont parfaits pour vivre des expériences uniques et sincères.
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="secteur-tourisme.html">
+                    <li>
+                        <img src="assets/images/sectors4.jpg">
+                        <div class="card">
+                            <p><span>04</span>/18</p>
+                            <h3>Accueil, tourisme,
+                                animation</h3>
+                            <div class="card__hover">
+                                <p>
+                                    Voir des étoiles dans les yeux des autres, ça vous motive ? En travaillant dans le secteur de l'accueil, de l’animation et du tourisme, c’est vous qui allez les faire rêver !
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="secteur-comptabilite.html">
+                    <li>
+                        <img src="assets/images/sectors5.jpg">
+                        <div class="card">
+                            <p><span>05</span>/18</p>
+                            <h3>Comptabilité, gestion, 
+                                secrétariat, bureautique,
+                                informatique</h3>
+                            <div class="card__hover">
+                                <p>
+                                    L’organisation est votre meilleure amie ? Alors, nous avons besoin de vous dans les domaines de la comptabilité, de la bureautique, et de l’informatique. 
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="secteur-vente.html">
+                    <li>
+                        <img src="assets/images/sectors6.jpg">
+                        <div class="card">
+                            <p><span>06</span>/18</p>
+                            <h3>Commerce, vente,
+                                magasinage</h3>
+                            <div class="card__hover">
+                                <p>
+                                    Vous avez le sens inné du contact… Et surtout vous adorez ça ? Optez pour les métiers du commerce, de la vente et du magasinage.
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="secteur-horticulture.html">
+                    <li>
+                        <img src="assets/images/sectors7.jpg">
+                        <div class="card">
+                            <p><span>07</span>/18</p>
+                            <h3>Horticulture, 
+                                Arboriculture</h3>
+                            <div class="card__hover">
+                                <p>
+                                    Vous aimez vous cultiver et cultiver la nature ? Vous trouverez forcément votre bonheur dans l’horticulture ou le maraîchage.
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="secteur-viticulture.html">
+                    <li>
+                        <img src="assets/images/sectors8.jpeg">
+                        <div class="card">
+                            <p><span>08</span>/18</p>
+                            <h3>Viticulture,
+                                <br>Oenologie</h3>
+                            <div class="card__hover">
+                                <p>
+                                    Vous souhaitez cultiver le patrimoine et l’art de vivre à la française ? Les métiers de la vigne et de l’œnologie vous ouvrent grand les bras !
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="secteur-elevage-specialise.html">
+                    <li>
+                        <img src="assets/images/sectors9.jpg">
+                        <div class="card">
+                            <p><span>09</span>/18</p>
+                            <h3>Élevage spécialisé, 
+                                <br>Soin aux animaux, Aquaculture</h3>
+                            <div class="card__hover">
+                                <p>
+                                    Le monde animal vous fascine ? Ça tombe bien parce que nous aussi... Venez prendre soin des animaux et découvrir les métiers de l’élevage spécialisé.
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="secteur-mecanique.html">
+                    <li>
+                        <img src="assets/images/sectors10.jpg">
+                        <div class="card">
+                            <p><span>10</span>/18</p>
+                            <h3>Mécanique, maintenance, conduite et aéronautique</h3>
+                            <div class="card__hover">
+                                <p>
+                                    Vous rêvez d’une vie à 100 à l’heure ? Les métiers de la mécanique vous permettent de vivre de votre passion et de développer votre expertise.
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="secteur-amenagement-paysager.html">
+                    <li>
+                        <img src="assets/images/sectors11.jpg">
+                        <div class="card">
+                            <p><span>11</span>/18</p>
+                            <h3>Aménagement paysager, des jardins et espaces verts</h3>
+                            <div class="card__hover">
+                                <p>
+                                    Vous mettre au vert vous permet de vous ressourcer et vous apaise ? Vous allez adorer les métiers de l’aménagement paysager !
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="secteur-environnement.html">
+                    <li>
+                        <img src="assets/images/sectors12.jpg">
+                        <div class="card">
+                            <p><span>12</span>/18</p>
+                            <h3>Environnement, faune sauvage, espace rural</h3>
+                            <div class="card__hover">
+                                <p>
+                                    Rien n’est plus précieux à vos yeux que la richesse de la nature ? Aidez-nous à la préserver grâce aux métiers de l’environnement.
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="secteur-foret.html">
+                    <li>
+                        <img src="assets/images/sectors13.jpg">
+                        <div class="card">
+                            <p><span>13</span>/18</p>
+                            <h3>Forêt, bûcheronnage, sylviculture</h3>
+                            <div class="card__hover">
+                                <p>
+                                    Vous puisez vos forces dans la relation que vous entretenez avec la nature ? Venez en prendre soin en choisissant les métiers de la forêt.
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="secteur-electricite.html">
+                    <li>
+                        <img src="assets/images/sectors14.jpg">
+                        <div class="card">
+                            <p><span>14</span>/18</p>
+                            <h3>Electricité
+                                <br>et électronique</h3>
+                            <div class="card__hover">
+                                <p>
+                                    Les sciences vous passionnent… Mais vous aimez aussi expérimenter ? Les métiers de l’électricité et de l’électronique vont vous ravir.
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="secteur-batiment.html">
+                    <li>
+                        <img src="assets/images/sectors15.jpg">
+                        <div class="card">
+                            <p><span>15</span>/18</p>
+                            <h3>Bâtiment
+                                <br>et bois</h3>
+                            <div class="card__hover">
+                                <p>
+                                    Construire et avancer main dans la main est fondamental pour vous ? La grande famille du bâtiment et du bois n’attend plus que vous pour s’agrandir !
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="secteur-agroalimentaire.html">
+                    <li>
+                        <img src="assets/images/sectors16.jpg">
+                        <div class="card">
+                            <p><span>16</span>/18</p>
+                            <h3>Bouche,
+                                <br>agroalimentaire</h3>
+                            <div class="card__hover">
+                                <p>
+                                    Régaler les autres vous fait aussi saliver ? Les métiers de bouche et de l’agroalimentaire vous permettront d’allier innovation, tradition et passion !
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="secteur-hotellerie.html">
+                    <li>
+                        <img src="assets/images/sectors17.jpg">
+                        <div class="card">
+                            <p><span>17</span>/18</p>
+                            <h3>Hôtellerie,
+                                <br>Restauration</h3>
+                            <div class="card__hover">
+                                <p>
+                                    Servir et régaler pourrait être votre devise ? Vous êtes 100% compatibles avec les métiers de l’hôtellerie et de la restauration.
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="secteur-securite.html">
+                    <li>
+                        <img src="assets/images/sectors18.jpg">
+                        <div class="card">
+                            <p><span>18</span>/18</p>
+                            <h3>Sécurité</h3>
+                            <div class="card__hover">
+                                <p>
+                                    Vous avez à cœur de veiller sur les autres ? Vous former aux métiers de la sécurité vous permettra de mieux les protéger jour après jour.
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+            </ul>
+            <div class="arrow -sectors"></div>
+        </section>
+
+        <!-- BLOC BACKGROUND : "Trouver une formation" -->
+        <section class="background-bloc">
+            <div class="container">
+                <div class="background-bloc__text">
+                    <span class="uptitle">Trouver une formation</span>
+                    <h2>
+                        Vous souhaitez <strong>trouver 
+                        <br>la formation</strong> qui correspond à <strong>vos envies et vos besoins ?</strong>
+                    </h2>
+                </div>
+                <div class="black-btn">
+                    <a href="trouver-formation.html" class="text"><p>Trouver une <span>formation</span></p></a>
+                    <a href="trouver-formation.html" class="cta" role="button"></a>
+                </div>
+            </div>
+            <img src="assets/images/compass.svg" alt="">
+        </section>
+
+        <!-- BLOC TXT-IMG : "Une Union qui fédère toutes nos Maisons" -->
+        <section class="txt-img">
+            <div class="container">
+                <div class="txt-img__left">
+                    <span class="uptitle">Qui sommes-nous ?</span>
+                    <h3>Une Union qui fédère <strong>toutes nos Maisons</strong></h3>
+                    <p><strong>Notre Union regroupe l’ensemble des Maisons. Chaque Maison est une association familiale indépendante.</strong></p>
+                    <p>Cette particularité nous permet d’être toujours plus agiles et réactifs. Nous sommes au cœur de nos territoires, au plus proches des acteurs locaux. Cette organisation nous permet de nous adapter aux besoins en tenant compte de la réalité de terrain. Ainsi, non seulement nous participons à la vie et au dynamisme de nos territoires, mais nous offrons également à toutes celles et ceux que nous formons de meilleurs chances de réussir. Ils peuvent compter sur notre soutien et celui des membres de notre réseau pour trouver non seulement des stages et des contrats d’alternance tout au long de leur formation mais également des débouchés qu sortir de cette dernière.</p>
+                    <div class="more-btn">
+                        <a href="presentation.html" class="text"><p>En savoir <span>plus</span></p></a>
+                        <a href="presentation.html" class="cta" role="button"></a>
+                    </div>
+                </div>
+                <div class="txt-img__right">
+                    <img src="assets/images/mfr-home2.jpg" alt="" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOC NEWS : "En MFR, nous cultivons toutes les réussites !" -->
+        <section class="news-bloc">
+            <div class="container">
+                <div class="news-bloc__title">
+                    <span class="uptitle">Actualités</span>
+                    <h2><strong>En MFR,</strong> nous cultivons toutes les réussites !</h2>
+                </div>
+
+                <article class="news-bloc__principal">
+                    <a href="https://mvt.mfr.fr/index.php/2023/02/10/clemence-vous-parle-de-sa-formation-rurale-au-tchad/" target="_blank">
+                        <img src="assets/images/article-mvt1.jpg">
+                        <div>
+                            <p class="date">10 février 2023</p>
+                            <h3>Clémence vous parle de sa formation rurale au Tchad</h3>
+                            <p>
+                                Les MFR du Tchad, représentées par leur union nationale l’UFABALT, sont en partenariat avec la fédération des MFR de Charente. Les deux partenaires participent à un programme de coopération financé par l’AFD.
+                            </p>
+                        </div>
+                    </a>
+                </article>
+
+                <div class="news-bloc__secondary">
+                    <!-- Slider version desktop -->
+                    <div class="-desktop">
+                        <div class="owl-carousel">
+                            <div>
+                                <a href="https://mvt.mfr.fr/index.php/2022/12/28/duo-de-choc-monique-et-maryse/" target="_blank">
+                                    <article>
+                                        <img src="assets/images/article-mvt2.jpg">
+                                        <div>
+                                            <p class="date">28 décembre 2022</p>
+                                            <h4>Duo de choc : Monique et Maryse</h4>
+                                            <p>
+                                                Monique et Maryse, mères d’anciens diplômés en MFR, ont décidé de continuer l’aventure à la présidence d’une Maison Familiale Rurale. Elles racontent leur expérience pour MVT
+                                            </p>
+                                        </div>
+                                    </article>
+                                </a>
+                                <a href="https://mvt.mfr.fr/index.php/2022/12/22/killian-pour-son-livre-maman-a-dit-bande-de-nuls/" target="_blank">
+                                    <article>
+                                        <img src="assets/images/article-mvt3.jpg">
+                                        <div>
+                                            <p class="date">22 décembre 2022</p>
+                                            <h4>Killian – Pour son livre « Maman a dit, Bande de nuls »</h4>
+                                            <p>
+                                                Les réussites sont faites de patience, de travail, jalonnées d’obstacles, stimulées par la persévérance. Killian Leutellier, ancien élève de la MFR de Janzé en filière commerce, a sorti un livre sur ses troubles autisitique et schizophrénique
+                                            </p>
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://mvt.mfr.fr/index.php/2022/12/13/abattre-un-arbre-en-4-etapes-avec-adeline/" target="_blank">
+                                    <article>
+                                        <img src="assets/images/article-mvt4.jpeg">
+                                        <div>
+                                            <p class="date">13 décembre 2022</p>
+                                            <h4>Abattre un arbre en 4 étapes avec Adeline !</h4>
+                                            <p>
+                                                Avec un apprentissage maîtrisé et encadré, chaque métier est accessible à chacun ! La preuve en images avec Adeline.
+                                            </p>
+                                        </div>
+                                    </article>
+                                </a>
+                                <a href="https://mvt.mfr.fr/index.php/2022/11/02/maeva-21-ans-partage-son-experience-des-metiers-de-lagriculture/" target="_blank">
+                                    <article>
+                                        <img src="assets/images/article-mvt5.jpg">
+                                        <div>
+                                            <p class="date">2 novembre 2022</p>
+                                            <h4>Maeva, 21 ans, partage son expérience des métiers de l’agriculture</h4>
+                                            <p>
+                                                « Pour moi, c’est toujours une satisfaction de produire de la nourriture pour les autres. »
+                                            </p>
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="arrow -desknews"></div>
+                    </div>
+                    <!-- Slider version desktop -->
+
+                    <!-- Slider version mobile -->
+                    <div class="-mobile">
+                        <div class="owl-carousel">
+                            <a href="">
+                                <article>
+                                    <img src="assets/images/submenu2.jpg">
+                                    <div>
+                                        <p class="date">19 septembre 2022</p>
+                                        <h4>2023, ensemble !</h4>
+                                        <p>
+                                            Une grande première pour les MFR cette année : nous avons décidé de réaliser notre première carte de vœux collaborative. Si comme nous, vous aimez les MFR, laissez-nous un petit message. Pour participer, c’est très simple, il vous suffit d’envoyer votre vidéo juste ici...
+                                        </p>
+                                    </div>
+                                </article>
+                            </a>
+                            <a href="">
+                                <article>
+                                    <img src="assets/images/news2.jpeg">
+                                    <div>
+                                        <p class="date">15 novembre 2022</p>
+                                        <h4>Devenir : la série à ne pas manquer !</h4>
+                                        <p>
+                                            Découvrez la MFR de Challasn et les coulisses de l’ostréiculture grâce à une série de reportages diffusée à partir de lundi 28 novembre à 21h sur France 5.
+                                        </p>
+                                    </div>
+                                </article>
+                            </a>
+                            <a href="">
+                                <article>
+                                    <img src="assets/images/submenu2.jpg">
+                                    <div>
+                                        <p class="date">19 septembre 2022</p>
+                                        <h4>2023, ensemble !</h4>
+                                        <p>
+                                            Une grande première pour les MFR cette année : nous avons décidé de réaliser notre première carte de vœux collaborative. Si comme nous, vous aimez les MFR, laissez-nous un petit message. Pour participer, c’est très simple, il vous suffit d’envoyer votre vidéo juste ici...
+                                        </p>
+                                    </div>
+                                </article>
+                            </a>
+                            <a href="">
+                                <article>
+                                    <img src="assets/images/news2.jpeg">
+                                    <div>
+                                        <p class="date">15 novembre 2022</p>
+                                        <h4>Devenir : la série à ne pas manquer !</h4>
+                                        <p>
+                                            Découvrez la MFR de Challasn et les coulisses de l’ostréiculture grâce à une série de reportages diffusée à partir de lundi 28 novembre à 21h sur France 5.
+                                        </p>
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="arrow -mobnews"></div>
+                    </div>
+                    <!-- Slider version mobile -->
+                </div>
+                
+                <div class="news-bloc__redirection">
+                    <div>
+                        <h4>Retrouvez toute notre actualité sur myMFR</h4>
+                        <img src="assets/images/logo-mymfr.svg" alt="Logo My MFR">
+                    </div>
+                    <div class="scroll-btn">
+                        <a href="mymfr.html" class="cta" role="button"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PARTNER BLOC : "Ils travaillent avec nous" -->
+        <section class="partner-bloc">
+            <div class="container">
+                <div class="partner-bloc__title">
+                    <span class="uptitle">partenaires</span>
+                    <h2>Ils travaillent <strong>avec nous</strong></h2>
+                </div>
+                <ul class="owl-carousel">
+                    <li>
+                        <img src="assets/images/partenaires/logo-ministere-agriculture.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-ministere-education.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-ministere-travail.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-ministere-affaires-sociales.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-ministere-villes-jeunesse-sport.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-ministere-europe.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-afd.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-erasmus.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-regions-france.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-amrf.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-walt.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-agriculture-territoires.svg" alt="">
+                    </li>
+                </ul>
+                <div class="partner-bloc__arrow">
+                    <div class="link">
+                        <a href="partenaires.html">Voir tous <strong>les partenaires</strong></a>
+                    </div>
+                    <div class="arrow -partner"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOC CONTACT : "Vous souhaitez vous lancer dans l’aventure MFR ?" -->
+        <section class="contact-bloc">
+            <div class="container">
+                <h2>Vous souhaitez vous lancer 
+                    <br><strong>dans l’aventure MFR ?</strong></h2>
+                <p>
+                    Être bien accompagné, ça commence dès maintenant ! 
+                    <br>Nos équipes sont à votre disposition pour répondre à vos questions.
+                </p>
+                <div class="btn-with-text">
+                    <a href="contact.html" class="text"><p>Nous <span>contacter</span></p></a>
+                    <a href="contact.html" class="cta" role="button"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="container">
+            <div class="footer__top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo-ocre.svg" alt="Logo MFR">
+                    </a>
+                    <p>Nos Maisons vous propose des formations par alternance à partir de la 4ème jusqu’au bac + 5 dans 18 secteurs d’activités.</p>
+                </div>
+                <div class="links">
+                    <ul>Menu
+                        <!-- <li>
+                            <a href="">Qui sommes-nous ?</a>
+                        </li> -->
+                        <li>
+                            <a href="presentation.html">Formations</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Nous contacter</a>
+                        </li>
+                    </ul>
+                    <ul>liens utiles
+                        <li>
+                            <a href="https://mvt.mfr.fr/index.php/category/articles/" target="_blank" class="-external">Actualités MVT</a>
+                        </li>
+                      <!--   <li>
+                            <a href="recrutement.html">Recrutement</a>
+                        </li> -->
+                        <li>
+                            <a href="partenaires.html">Partenaires</a>
+                        </li>
+                        <!-- <li>
+                            <a href="" target="_blank" class="-external">Presse</a>
+                        </li> -->
+                    </ul>
+                    <div class="buttons">
+                        <a href="trouver-formation.html" class="btn">Trouver une formation</a>
+                        <a href="mymfr.html" class="btn -mymfr" role="button">Accéder à my MFR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="links">
+                    @2022 MFR. All rights reserved
+                    <a href="mentions.html">Mentions légales</a>
+                    <a href="rgpd.html">RGDP</a>
+                    <a href="plan-de-site.html">Plan de site</a>
+                </div>
+                <div class="social">
+                    <a href="https://fr-fr.facebook.com/mfr.asso.fr/" target="_blank">
+                        <img src="assets/images/icon-facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/mfr_officiel/?hl=fr" target="_blank">
+                        <img src="assets/images/icon-instagram.svg" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    
+</body>
+</html>

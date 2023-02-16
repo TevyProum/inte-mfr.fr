@@ -1,0 +1,204 @@
+/* START SECTORS.SCSS */
+
+.sectors {
+    margin-bottom: 75px;
+
+    @media #{$large-phone} {
+        margin-bottom: 120px;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 24px;
+        padding-top: 67px;
+        padding-bottom: 67px;
+        text-align: center;
+        position: relative;
+
+        @media #{$large-phone} {
+            flex-direction: row;
+            text-align: initial;
+            align-items: flex-end;
+        }
+    
+        div {
+            flex-basis: 43%;
+
+            h2 {
+                margin-top: 10px;
+            }
+        }
+
+        p {
+            flex-basis: 51%;
+            font-family: 'Work Sans';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 160%;
+        }
+    }
+
+    ul {
+        &::after,
+        &::before {
+            content: '';
+            background: url(../../assets/images/border-white.svg);
+            background-repeat: repeat-x;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            bottom: -2px;
+            max-height: 24px;
+        }
+
+        &::before {
+            top: -2px;
+            transform: rotate(180deg);
+            z-index: 2;
+        }
+
+        a {
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                }
+
+                .card {
+                    @media #{$large-phone} {
+                        transform: translateY(-120px);
+                    }
+                }
+
+                .card__hover {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        li {
+            gap: 0;
+            align-items: flex-end;
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+                content: '';
+                background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 47.48%);
+                width: 100%;
+                height: 100%;
+                max-width: initial;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 0;
+                z-index: 1;
+            }
+
+            img {
+                object-fit: cover;
+                height: 400px;
+                transition: transform 0.6s ease-in-out;
+
+                @media #{$large-phone} {
+                    height: 713px;
+                }
+            }
+
+            .card {
+                position: absolute;
+                z-index: 2;
+                padding: 43px 32px 55px 32px;
+                transition: transform 0.6s ease-in-out;
+                width: 100%;
+
+                p {
+                    font-family: 'Roboto Slab';
+                    font-weight: 200;
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: $ocre;
+
+                    @media #{$large-phone} {
+                        font-size: 28px;
+                    }
+
+                    span {
+                        font-family: 'Roboto Slab';
+                        font-weight: 100;
+                        font-size: 32px;
+                        line-height: 120%;
+                        color: white;
+                        margin-right: 6px;
+
+                        @media #{$large-phone} {
+                            font-size: 61px;
+                        }
+                    }
+                }
+                
+                h3 {
+                    font-family: 'Roboto Slab';
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 130%;
+                    color: white;
+                    display: flex;
+                    margin: 16px 0 0 32px;   
+                    position: relative; 
+                    max-width: 395px; 
+                    
+                    @media #{$large-phone} {
+                        font-size: 32px;
+                    }
+
+                    &::before {
+                        content: '';
+                        width: 1px;
+                        height: 100%;
+                        background: $ocre;
+                        position: absolute;
+                        left: -32px;
+                    }
+                }
+
+                &__hover {
+                    display: none;
+
+                    @media #{$large-phone} {
+                        display: flex;
+                        align-items: center;
+                        gap: 55px;
+                        margin-top: 24px;
+                        transform: translateY(120px);
+                        position: absolute;
+                        opacity: 0;
+                        transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+                    }
+
+                    p {
+                        font-family: 'Work Sans';
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 160%;
+                        color: white;
+                        flex-basis: 60%
+                    }
+                }
+            }
+        }
+    }
+
+    .-sectors {
+        margin-top: 40px;
+
+        @media #{$large-phone} {
+            margin-top: 26px;
+        }
+    }
+}
+
+/* END SECTORS.SCSS */

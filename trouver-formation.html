@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFR - Trouver une formation</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/menu.js" defer></script>
+    <script src="js/map.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="header__mobile container">
+            <a href="index.html">
+                <img src="assets/images/logo-ocre.svg" alt="Logo MFR" class="logo">
+            </a>
+            <button class="burger"></button>
+        </div>
+        <div class="header__toggle">
+            <div class="header__bottom">
+                <div class="menu">
+                    <div class="container">
+                        <a href="index.html" class="-desktop">
+                            <img src="assets/images/logo-ocre.svg" alt="Logo MFR" class="logo">
+                        </a>
+                        <ul class="links">
+                            <!-- <li>
+                                <a href="">Qui sommes-nous</a>
+                            </li> -->
+                            <li class="parent">
+                                Formations
+                                <div class="submenu">
+                                    <div class="container">
+                                        <article>
+                                            <a href="presentation.html">
+                                                <div class="image">
+                                                    <img src="assets/images/hero-presentation.jpeg" loading="lazy">
+                                                </div>
+                                                <div>
+                                                    <p class="title">Présentation</p>
+                                                    <p>Notre modèle associatif vous intrigue ? Venez l’explorer en détail avec nous.</p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                        <article>
+                                            <a href="presentation.html#comment-trouver-formation" class="submenu2">
+                                                <div class="image">
+                                                    <img src="assets/images/submenu2.jpg" loading="lazy">
+                                                </div>
+                                                <div>
+                                                    <p class="title">Comment trouver une formation ?</p>
+                                                    <p>Vous avez besoin d’un coup de pouce pour trouver votre formation ? C’est par ici.</p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                        <article>
+                                            <a href="presentation.html#secteurs-formation" class="submenu3">
+                                                <div class="image">
+                                                    <img src="assets/images/submenu3.jpg" loading="lazy">
+                                                </div>
+                                                <div>
+                                                    <p class="title">Secteurs de formations</p>
+                                                    <p>Découvrez nos 18 secteurs métiers et plus de 350 qualifications.</p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="contact.html">Nous contacter</a>
+                            </li>
+                        </ul>
+                        <a href="trouver-formation.html" class="btn">Trouver une formation</a>
+                    </div>
+                </div>
+                <div class="brush"></div>
+            </div>
+            <div class="header__top">
+                <a href="https://mvt.mfr.fr/index.php/category/articles/" target="_blank" class="preheader-link -external">Actualités MVT</a>
+                <!-- <a href="recrutement.html" class="preheader-link">Recrutement</a> -->
+                <a href="partenaires.html" class="preheader-link">Partenaires</a>
+                <!-- <a href="" target="_blank" class="preheader-link -external">Presse</a> -->
+                <a href="mymfr.html" target="_blank" class="preheader-link -external">My MFR</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="map container">
+
+            <div class="map__title">
+                <span class="uptitle">trouver une formation</span>
+                <h1>
+                    <span>Lancez-vous dans l’aventure</span> 
+                    <br>dès maintenant !
+                </h1>
+                <h2>Filtrer les formations</h2>
+            </div>
+       
+            <div class="map__filters">
+                <div class="filters">
+                    <div class="dropdown">
+                        <label>Ville <span class="asterisk">*</span></label>
+                        <div class="dropdown__container">
+                            <select>
+                                <option>Lille, 59000</option>
+                                <option>Ville 2</option>
+                            </select>
+                        </div>
+                    </div>  
+                    <div class="dropdown">
+                        <label>Rayon de recherche <span class="asterisk">*</span></label>
+                        <div class="dropdown__container">
+                            <select>
+                                <option>300 km</option>
+                                <option>Ville 2</option>
+                            </select>
+                        </div>
+                    </div>  
+                    <div class="dropdown">
+                        <label>Métier <span class="asterisk">*</span></label>
+                        <div class="dropdown__container">
+                            <select>
+                                <option>Accueil</option>
+                                <option>Métier 2</option>
+                            </select>
+                        </div>
+                    </div>  
+                    <div class="dropdown">
+                        <label>Niveau <span class="asterisk">*</span></label>
+                        <div class="dropdown__container">
+                            <select>
+                                <option>Après la seconde</option>
+                                <option>Niveau 2</option>
+                            </select>
+                        </div>
+                    </div>  
+                </div>
+                <div class="input-search">
+                    <input type="submit" value="Lancer la recherche"/>
+                </div>
+            </div>
+
+            <div class="map__results">
+                <div class="-mobile">
+                    <h3>Résultats de recherche : </h3>
+                    <h4><span>3</span> Maisons MFR trouvées </h4>
+                </div>
+
+                <div class="results-image">
+                    <img src="assets/images/test-map.jpg">
+                    <img id="close-map" src="assets/images/btn-map-close.svg">
+                </div>
+    
+                <div class="results-list">
+                    <div class="-desktop">
+                        <h3>Résultats de recherche : </h3>
+                        <h4><span>3</span> Maisons MFR trouvées </h4>
+                    </div>
+                    <ul>
+                        <li class="result-title">
+                            <div class="title">
+                                <div class="text">
+                                    <span class="number">1</span>
+                                    <div>
+                                        MFR LE CATEAU À <br>LE CATEAU-CAMBRÉSIS
+                                        <span>à 69 km</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="result-details">
+                            <img class="-desktop" src="assets/images/article1.jpg">
+                            <div class="title -desktop -active">
+                                <span class="number">1</span>
+                                MFR LE CATEAU À LE CATEAU-CAMBRÉSIS
+                            </div>
+                            <p class="address">70, rue Faidherbe<br>59360 LE CATEAU-CAMBRESIS</p>
+                            <p class="phone">03.27.84.30.13</p>
+                            <a class="mail" href="mailto:mfr.le-cateau@mfr.asso.fr">mfr.le-cateau@mfr.asso.fr</a>
+                            <p class="sub-title">Formations diplômantes <span>(12)</span></p>
+                            <ul class="sub-result">
+                                <li>Bac Pro Conduite et Gestion de l'Entreprise Hippique (CGEH)</li>
+                                <li>Bac Pro Conduite et Gestion de l'Entreprise Agricole (CGEA)</li>
+                                <li>Seconde Pro Productions</li>
+                                <li>BTSA Productions animales</li>
+                                <li>BP JEPS Spécialité Educateur sportif</li>
+                                <li>Titre pro Animateur Assistant d'équitation</li>
+    
+                                <li>Bac Pro Conduite et Gestion de l'Entreprise Hippique (CGEH)</li>
+                                <li>Bac Pro Conduite et Gestion de l'Entreprise Agricole (CGEA)</li>
+                                <li>Seconde Pro Productions</li>
+                                <li>BTSA Productions animales</li>
+                                <li>BP JEPS Spécialité Educateur sportif</li>
+                                <li>Titre pro Animateur Assistant d'équitation</li>
+                            </ul>
+                            <a href="" class="btn">Accéder au site</a>
+                        </div>
+                        <li class="result-title">
+                            <div class="title">
+                                <div class="text">
+                                    <span class="number">2</span>
+                                    <div>
+                                        MFR DE ROLLANCOURT
+                                        <span>à 71 km</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="result-details">
+                            <img class="-desktop" src="assets/images/article1.jpg">
+                            <div class="title -desktop">
+                                <span class="number">2</span>
+                                MFR DE ROLLANCOURT
+                            </div>
+                            <p class="address">70, rue Faidherbe<br>59360 LE CATEAU-CAMBRESIS</p>
+                            <p class="phone">03.27.84.30.13</p>
+                            <a class="mail" href="mailto:mfr.le-cateau@mfr.asso.fr">mfr.le-cateau@mfr.asso.fr</a>
+                            <p class="sub-title">Formations diplômantes <span>(12)</span></p>
+                            <ul class="sub-result">
+                                <li>Test</li>
+                            </ul>
+                            <a href="" class="btn">Accéder au site</a>
+                        </div>
+                        <li class="result-title">
+                            <div class="title">
+                                <div class="text">
+                                    <span class="number">3</span>
+                                    <div>
+                                        MFR LA PIGNERIE À LAVAL
+                                        <span>à 71 km</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="result-details">
+                            <img class="-desktop" src="assets/images/article1.jpg">
+                            <div class="title -desktop">
+                                <span class="number">3</span>
+                                    MFR LA PIGNERIE À LAVAL
+                            </div>
+                            <p class="address">70, rue Faidherbe<br>59360 LE CATEAU-CAMBRESIS</p>
+                            <p class="phone">03.27.84.30.13</p>
+                            <a class="mail" href="mailto:mfr.le-cateau@mfr.asso.fr">mfr.le-cateau@mfr.asso.fr</a>
+                            <p class="sub-title">Formations diplômantes <span>(12)</span></p>
+                            <ul class="sub-result">
+                                <li>Test</li>
+                            </ul>
+                            <a href="" class="btn">Accéder au site</a>
+                        </div>
+                    </ul>
+                    <div class="small-btn">
+                        <a href="" class="text">
+                            <p>Exporter la recherche 
+                                <br><span>Format : PDF</span>
+                            </p>
+                        </a>
+                        <a href="" class="cta" role="button"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="container">
+            <div class="footer__top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo-ocre.svg" alt="Logo MFR">
+                    </a>
+                    <p>Nos Maisons vous propose des formations par alternance à partir de la 4ème jusqu’au bac + 5 dans 18 secteurs d’activités.</p>
+                </div>
+                <div class="links">
+                    <ul>Menu
+                        <!-- <li>
+                            <a href="">Qui sommes-nous ?</a>
+                        </li> -->
+                        <li>
+                            <a href="presentation.html">Formations</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Nous contacter</a>
+                        </li>
+                    </ul>
+                    <ul>liens utiles
+                        <li>
+                            <a href="https://mvt.mfr.fr/index.php/category/articles/" target="_blank" class="-external">Actualités MVT</a>
+                        </li>
+                      <!--   <li>
+                            <a href="recrutement.html">Recrutement</a>
+                        </li> -->
+                        <li>
+                            <a href="partenaires.html">Partenaires</a>
+                        </li>
+                        <!-- <li>
+                            <a href="" target="_blank" class="-external">Presse</a>
+                        </li> -->
+                    </ul>
+                    <div class="buttons">
+                        <a href="trouver-formation.html" class="btn">Trouver une formation</a>
+                        <a href="mymfr.html" class="btn -mymfr" role="button">Accéder à my MFR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="links">
+                    @2022 MFR. All rights reserved
+                    <a href="mentions.html">Mentions légales</a>
+                    <a href="rgpd.html">RGDP</a>
+                    <a href="plan-de-site.html">Plan de site</a>
+                </div>
+                <div class="social">
+                    <a href="https://fr-fr.facebook.com/mfr.asso.fr/" target="_blank">
+                        <img src="assets/images/icon-facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/mfr_officiel/?hl=fr" target="_blank">
+                        <img src="assets/images/icon-instagram.svg" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    
+</body>
+</html>

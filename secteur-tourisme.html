@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFR - Accueil, tourisme, animation</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/lity/lity.min.css">
+    <link rel="stylesheet" href="styles/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owlcarousel/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/lity.min.js" defer></script>
+    <script src="js/owl.carousel.min.js" defer></script>
+    <script src="js/slider.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="header__mobile -white container">
+            <a href="index.html">
+                <img src="assets/images/logo-ocre.svg" alt="Logo MFR" class="logo">
+            </a>
+            <button class="burger"></button>
+        </div>
+        <div class="header__toggle">
+            <div class="header__bottom -white">
+                <div class="menu">
+                    <div class="container">
+                        <a href="index.html" class="-desktop">
+                            <img src="assets/images/logo-ocre.svg" alt="Logo MFR" class="logo">
+                        </a>
+                        <ul class="links">
+                            <!-- <li>
+                                <a href="">Qui sommes-nous</a>
+                            </li> -->
+                            <li class="parent">
+                                Formations
+                                <div class="submenu">
+                                    <div class="container">
+                                        <article>
+                                            <a href="presentation.html">
+                                                <div class="image">
+                                                    <img src="assets/images/hero-presentation.jpeg" loading="lazy">
+                                                </div>
+                                                <div>
+                                                    <p class="title">Présentation</p>
+                                                    <p>Notre modèle associatif vous intrigue ? Venez l’explorer en détail avec nous.</p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                        <article>
+                                            <a href="presentation.html#comment-trouver-formation" class="submenu2">
+                                                <div class="image">
+                                                    <img src="assets/images/submenu2.jpg" loading="lazy">
+                                                </div>
+                                                <div>
+                                                    <p class="title">Comment trouver une formation ?</p>
+                                                    <p>Vous avez besoin d’un coup de pouce pour trouver votre formation ? C’est par ici.</p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                        <article>
+                                            <a href="presentation.html#secteurs-formation" class="submenu3">
+                                                <div class="image">
+                                                    <img src="assets/images/submenu3.jpg" loading="lazy">
+                                                </div>
+                                                <div>
+                                                    <p class="title">Secteurs de formations</p>
+                                                    <p>Découvrez nos 18 secteurs métiers et plus de 350 qualifications.</p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="contact.html">Nous contacter</a>
+                            </li>
+                        </ul>
+                        <a href="trouver-formation.html" class="btn">Trouver une formation</a>
+                    </div>
+                </div>
+                <div class="brush"></div>
+            </div>
+            <div class="header__top -white">
+                <a href="https://mvt.mfr.fr/index.php/category/articles/" target="_blank" class="preheader-link -external">Actualités MVT</a>
+                <!-- <a href="recrutement.html" class="preheader-link">Recrutement</a> -->
+                <a href="partenaires.html" class="preheader-link">Partenaires</a>
+                <!-- <a href="" target="_blank" class="preheader-link -external">Presse</a> -->
+                <a href="mymfr.html" target="_blank" class="preheader-link -external">My MFR</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="sectors-page">
+        <!-- HERO -->
+        <section class="hero -secondary">
+            <video autoplay loop muted>
+                <source src="assets/images/video-agriculture.mp4" type="video/mp4">
+            </video>
+            <div class="container">
+                <a href="javascript:history.back()" class="btn -back">Retour</a>
+                <span class="uptitle">Secteur d’activités</span>
+                <h1>
+                    Les métiers de <strong>l’accueil, <br>du tourisme et de l’animation</strong>
+                </h1>
+                <p>
+                    Vous êtes la star de votre groupe d’amis ? Toujours partant pour mettre l’ambiance ou pour partager vos bons plans sorties avec les autres ? Vous avez plein de petites anecdotes en stock pour divertir ? Est-ce que vous avez déjà pensé à faire de ces petits talents du quotidien votre futur métier ? Le secteur de l’accueil du tourisme et de l’animation n’attend plus que vous pour apporter le sourire à toutes celles et ceux qui auront la chance de croiser un jour votre chemin.
+                </p>
+                <div class="scroll-btn">
+                    <a href="#scroll" class="cta" role="button"></a>
+                </div>
+            </div>
+        </section>
+
+        <div id="scroll"></div>
+        
+        <!-- BLOC TEXTE -->
+        <section class="text-columns -black">
+            <div class="text-columns__columns container">
+                <div class="column">
+                    <h2>Partager vos plus belles découvertes <strong>avec les autres.</strong></h2>
+                    <p>
+                        Si comme nous, vous pensez que c’est important d’offrir aux autres la possibilité de se détendre et de se ressourcer, alors vous pouvez apporter votre pierre à l’édifice. Comment ? En leur dénichant les plus belles destinations pour leur prochain voyage. En partageant avec eux vos plus belles adresses. En organisant et en planifiant tout pour eux dans les moindres détails pour qu’ils puissent profiter au maximum de leur séjour. C’est ça être un professionnel au top dans le milieu du tourisme !
+                    </p>
+                    <p>
+                        Si d’aventure, ce qui vous plaît davantage c’est d’être en contact avec les autres, optez plutôt pour les métiers de l’animation. Vous préparerez les activités, imaginerez différents projets… Et surtout vous y participerez. Toujours au cœur de l’action !
+                    </p>
+                </div>
+                <div class="column">
+                    <h2>Jongler entre <strong>savoir-être et compétences techniques et professionnelles.</strong></h2>
+                    <p>
+                        Quel que soit le métier que vous souhaitez exercer, sachez que votre capacité d’écoute et de conseil sera un de vos principaux atouts. C’est en développant ce talent que vous deviendrez bientôt une personne clé, aussi bien pour votre entreprise que pour vos clients. En assurant la commercialisation de biens ou de services, vous contribuez à la croissance du chiffre d’affaires… Et ça, c’est indispensable pour la bonne santé d’une entreprise.
+                    </p>
+                    <p>
+                        Que vous soyez votre propre patron en tant que commerçant indépendant, commercial au sein d’une entreprise, vendeur, dans une petite boutique, au sein de la grande distribution, de l’industrie… Vous êtes une personne capable de créer de la valeur.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOC TEXTE : "Les formations dispensées dans nos Maisons" -->
+        <section class="text-columns -beige">
+            <div class="text-columns__columns container">
+                <div class="column">
+                    <h2>
+                        <strong>Les formations dispensées</strong> 
+                        <br>dans nos Maisons
+                    </h2>
+                </div>
+                <div class="column">
+                    <p>
+                        <strong>
+                            Le divertissement, les loisirs et les voyages sont au cœur de nos vies. Ils participent à notre épanouissement, à notre développement personnel et à notre bien-être. Ce sont également des secteurs fondamentaux pour notre société et notre économie. Conscientes de cette importance, nos Maisons proposent des formations adaptées à la réalité du terrain.
+                        </strong>
+                    </p>
+                </div>
+            </div>
+            <div class="text-columns__columns container">
+                <div class="column">
+                    <p>
+                        <strong>
+                            Vous pourrez par exemple exercer dans :
+                        </strong>
+                    </p>
+                    <ul>
+                        <li>des parcs de loisir</li>
+                        <li>le milieu de l’hôtellerie</li>
+                        <li>des clubs de sports</li>
+                        <li>des centres de vacances et de loisirs</li>
+                        <li>des écoles</li>
+                        <li>des centres culturels</li>
+                        <li>des agences de voyages</li>
+                        <li>des collectivités</li>
+                        <li>des offices de tourisme</li>
+                        <li>des sites touristiques</li>
+                        <li>des parcs naturels</li>
+                        <li>des campings et des villages vacances</li>
+                        <li>des maisons de quartier</li>
+                        <li>des maisons de retraite et des EHPAD</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <p>
+                        <strong>
+                            Et devenir :
+                        </strong>
+                    </p>
+                    <ul>
+                        <li>guide touristique</li>
+                        <li>animateur sportif</li>
+                        <li>responsable d’activités touristiques</li>
+                        <li>responsable d’entreprise touristique</li>
+                        <li>animateur de réseau</li>
+                        <li>directeur associatif</li>
+                        <li>accompagnateur de tourisme</li>
+                        <li>agent d’accueil touristique</li>
+                        <li>agent de loisirs</li>
+                        <li>chargée de développement</li>
+                    </ul>
+                    <p>Pour les passionnés de nature et de gastronomie, sachez que nos Maisons peuvent aussi vous former aux métiers du Tourisme Vert et de l’Œnotourisme.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOC TEXTE -->
+        <section class="text-columns container">
+            <h2><strong>Avoir des responsabilités, </strong>ça vous tente ?</h2>
+            <div class="text-columns__columns">
+                <div class="column">
+                    <p>
+                        <strong>
+                            Prendre soin des autres en les divertissant, c’est un véritable savoir-faire ! Cela nécessite de développer des compétences très particulières. Par exemple, si vous voulez diriger des équipes, il faudra nécessairement vous intéresser au management et très certainement à des questions liées au juridique et à la gestion. Vous devrez apprendre à recruter, à former et… à animer vos propres équipes.
+                        </strong>
+                    </p>
+                </div>
+                <div class="column">
+                    <p>
+                        Pour proposer des séjours et des expériences touristiques, il est nécessaire d’apprendre à valoriser son offre et à la promouvoir grâce au marketing et aux techniques de vente. Maîtriser une ou plusieurs langues étrangères peut être également un véritable plus.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOC GALLERY -->
+        <section class="gallery">
+            <div class="owl-carousel">
+                <figure>
+                    <div class="image">
+                        <img src="assets/images/sliders/tourisme1.jpg">
+                    </div>
+                    <!-- <figcaption>Label</figcaption> -->
+                    <div class="arrow -gallery"></div>
+                </figure>
+                <figure>
+                    <div class="image">
+                        <img src="assets/images/sliders/tourisme2.jpg">
+                    </div>
+                    <!-- <figcaption>Label 2</figcaption> -->
+                    <div class="arrow -gallery"></div>
+                </figure>
+                <figure>
+                    <div class="image">
+                        <img src="assets/images/sliders/tourisme3.jpg">
+                    </div>
+                    <!-- <figcaption>Label 3</figcaption> -->
+                    <div class="arrow -gallery"></div>
+                </figure>
+            </div>
+            
+        </section>
+
+        <!-- BLOC QUOTE -->
+        <section class="quote">
+            <div class="container">
+                <div class="owl-carousel">
+                    <article>
+                        <p class="quote__title">Le secteur du tourisme demande de la polyvalence, il faut savoir s’adapter en permanence à la demande et avoir envie de faire plaisir aux clients.</p>
+                        <p class="quote__author">Anne Ravon</p>
+                        <p class="quote__description">formée en MFR, BTS tourisme</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOC Framed-text : "Le conseil pour démarrer du bon pied" -->
+        <section class="framed-text">
+            <div class="image">
+                <img src="assets/images/icon-lightbulb.svg">
+            </div>
+            <div>
+                <h2>
+                    <strong>Le conseil</strong> pour démarrer du bon pied</h2>
+                <p>
+                    Si vous avez envie de vous essayer aux métiers de l’animation, vous pouvez exercer en qualité d’amateur. Par exemple, en devenant bénévole au sein d’une association. Vous pouvez aussi passer votre BAFA dès 16 ans pour découvrir le métier pendant vos vacances en animant des centres aérés.
+                </p>
+            </div>
+        </section>
+
+        <!-- BLOC Témoignages : "Ils nous ont fait confiance" -->
+        <section class="testimony">
+            <div class="container">
+                <div class="testimony__title">
+                    <span class="uptitle">Témoignages</span>
+                    <h2>
+                        Ils nous ont fait 
+                        <br><strong>confiance</strong>
+                    </h2>
+                </div>
+                <div class="owl-carousel">
+                    <article>
+                        <img src="assets/images/karine.jpg">
+                        <h3>Médiatrice culturelle : le métier passionnant et créatif de Karine</h3>
+                        <p>À l’occasion des Journées européennes du patrimoine le 17 et 18 septembre 2022, nous avons rencontré Karine, médiatrice culturelle.</p>
+                        <a href="https://youtu.be/tHhwQUxWXlg" class="btn" data-lity>Voir l’interview</a>
+                    </article>
+                </div>
+                <div class="arrow -testimony"></div>
+            </div>
+        </section>
+
+        <!-- BLOC Background-image : "Ces métiers sont faits pour vous si :" -->
+        <section class="background-image">
+            <div class="texture">
+                <div class="container">
+                    <p>Ces métiers sont faits <strong>pour vous si :</strong></p>
+                    <div class="owl-carousel">
+                        <article>
+                            <div class="image">
+                                <img src="assets/images/icon/icon-handshake.svg">
+                            </div>
+                            <p class="text">vous aimez le <strong>contact<br> avec les autres</strong>
+                            </p>
+                        </article>
+                        <article>
+                            <div class="image">
+                                <img src="assets/images/icon/icon-ear.svg">
+                            </div>
+                            <p class="text">vous êtes <strong>disponible
+                                <br>et à l’écoute</strong>
+                            </p>
+                        </article>
+                        <article>
+                            <div class="image">
+                                <img src="assets/images/icon/icon-lightbulb.svg">
+                            </div>
+                            <p class="text">vous êtes <br><strong>créatif</strong>
+                            </p>
+                        </article>      
+                        <article>
+                            <div class="image">
+                                <img src="assets/images/icon/icon-structure-dorganisation.svg">
+                            </div>
+                            <p class="text">vous êtes <br><strong>organisé</strong>
+                            </p>
+                        </article>
+                        <article>
+                            <div class="image">
+                                <img src="assets/images/icon/icon-speak.svg">
+                            </div>
+                            <p class="text">vous maîtrisez une ou plusieurs <strong>langues étrangères</strong>
+                            </p>
+                        </article>
+                        <article>
+                            <div class="image">
+                                <img src="assets/images/icon/icon-whistle.svg">
+                            </div>
+                            <p class="text">vous avez le 
+                                <br><strong>sens des responsabilités</strong>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <!-- PARTNER BLOC : "Ils travaillent avec nous" -->
+        <section class="partner-bloc">
+            <div class="container">
+                <div class="partner-bloc__title">
+                    <span class="uptitle">partenaires</span>
+                    <h2>Ils travaillent <strong>avec nous</strong></h2>
+                </div>
+                <ul class="owl-carousel">
+                    <li>
+                        <img src="assets/images/partenaires/logo-ministere-agriculture.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-ministere-education.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-ministere-travail.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-ministere-affaires-sociales.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-ministere-villes-jeunesse-sport.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-ministere-europe.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-afd.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-erasmus.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-regions-france.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-amrf.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-walt.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/partenaires/logo-agriculture-territoires.svg" alt="">
+                    </li>
+                </ul>
+                <div class="partner-bloc__arrow">
+                    <div class="link">
+                        <a href="partenaires.html">Voir tous <strong>les partenaires</strong></a>
+                    </div>
+                    <div class="arrow -partner"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOC SECTORS : "Ces secteurs d’activités pourraient aussi vous intéresser" -->
+        <section class="sectors">
+            <div class="sectors__title container">
+                <div>
+                    <span class="uptitle">Secteur d’activités</span>
+                    <h2>
+                        <strong>Ces secteurs d’activités</strong> 
+                        <br>pourraient aussi vous intéresser
+                    </h2>
+                </div>
+            </div>
+            <ul class="owl-carousel">
+                <a href="secteur-vente.html">
+                    <li>
+                        <img src="assets/images/sectors6.jpg">
+                        <div class="card">
+                            <p><span>01</span>/04</p>
+                            <h3>Commerce, vente,
+                                magasinage</h3>
+                            <div class="card__hover">
+                                <p>
+                                    Vous avez le sens inné du contact… Et surtout vous adorez ça ? Optez pour les métiers du commerce, de la vente et du magasinage.
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="secteur-hotellerie.html">
+                    <li>
+                        <img src="assets/images/sectors17.jpg">
+                        <div class="card">
+                            <p><span>02</span>/04</p>
+                            <h3>Hôtellerie,
+                                <br>Restauration</h3>
+                            <div class="card__hover">
+                                <p>
+                                    Servir et régaler pourrait être votre devise ? Vous êtes 100% compatibles avec les métiers de l’hôtellerie et de la restauration.
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="secteur-viticulture.html">
+                    <li>
+                        <img src="assets/images/sectors8.jpeg">
+                        <div class="card">
+                            <p><span>03</span>/04</p>
+                            <h3>Viticulture,
+                                <br>Oenologie</h3>
+                            <div class="card__hover">
+                                <p>
+                                    Vous souhaitez cultiver le patrimoine et l’art de vivre à la française ? Les métiers de la vigne et de l’œnologie vous ouvrent grand les bras !
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="secteur-comptabilite.html">
+                    <li>
+                        <img src="assets/images/sectors5.jpg">
+                        <div class="card">
+                            <p><span>04</span>/04</p>
+                            <h3>Comptabilité, gestion, 
+                                secrétariat, bureautique,
+                                informatique</h3>
+                            <div class="card__hover">
+                                <p>
+                                    L’organisation est votre meilleure amie ? Alors, nous avons besoin de vous dans les domaines de la comptabilité, de la bureautique, et de l’informatique. 
+                                </p>
+                                <div class="cta -secteur" role="button"></div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+            </ul>
+            <div class="sectors__arrow">
+                <div class="link">
+                    <a href="presentation.html#secteurs-formation">Voir tous <strong>les secteurs d'activité</strong></a>
+                </div>
+                <div class="arrow -sectors"></div>
+            </div>
+        </section>
+
+        <!-- BLOC CONTACT : "Vous souhaitez vous lancer dans l’aventure MFR ?" -->
+        <section class="contact-bloc -transition">
+            <div class="container">
+                <h2>Vous souhaitez vous lancer 
+                    <br><strong>dans l’aventure MFR ?</strong></h2>
+                <p>
+                    Être bien accompagné, ça commence dès maintenant ! 
+                    <br>Nos équipes sont à votre disposition pour répondre à vos questions.
+                </p>
+                   <div class="btn-with-text">
+                    <a href="contact.html" class="text"><p>Nous <span>contacter</span></p></a>
+                    <a href="contact.html" class="cta" role="button"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="container">
+            <div class="footer__top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo-ocre.svg" alt="Logo MFR">
+                    </a>
+                    <p>Nos Maisons vous propose des formations par alternance à partir de la 4ème jusqu’au bac + 5 dans 18 secteurs d’activités.</p>
+                </div>
+                <div class="links">
+                    <ul>Menu
+                        <!-- <li>
+                            <a href="">Qui sommes-nous ?</a>
+                        </li> -->
+                        <li>
+                            <a href="presentation.html">Formations</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Nous contacter</a>
+                        </li>
+                    </ul>
+                    <ul>liens utiles
+                        <li>
+                            <a href="https://mvt.mfr.fr/index.php/category/articles/" target="_blank" class="-external">Actualités MVT</a>
+                        </li>
+                      <!--   <li>
+                            <a href="recrutement.html">Recrutement</a>
+                        </li> -->
+                        <li>
+                            <a href="partenaires.html">Partenaires</a>
+                        </li>
+                        <!-- <li>
+                            <a href="" target="_blank" class="-external">Presse</a>
+                        </li> -->
+                    </ul>
+                    <div class="buttons">
+                        <a href="trouver-formation.html" class="btn">Trouver une formation</a>
+                        <a href="mymfr.html" class="btn -mymfr" role="button">Accéder à my MFR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="links">
+                    @2022 MFR. All rights reserved
+                    <a href="mentions.html">Mentions légales</a>
+                    <a href="rgpd.html">RGDP</a>
+                    <a href="plan-de-site.html">Plan de site</a>
+                </div>
+                <div class="social">
+                    <a href="https://fr-fr.facebook.com/mfr.asso.fr/" target="_blank">
+                        <img src="assets/images/icon-facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/mfr_officiel/?hl=fr" target="_blank">
+                        <img src="assets/images/icon-instagram.svg" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,109 @@
+/* START TXT-IMG.SCSS */
+
+.txt-img {
+    background: url('../../assets/images/noise.png');
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    position: relative;
+
+    @media #{$desktop} {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        text-align: initial;
+    }
+
+    &.-white {
+        background: none;
+    }
+
+    &.-reverse {
+        .container {
+            @media #{$desktop} {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 60px;
+
+        @media #{$desktop} {
+            flex-direction: row;
+        }
+    }
+
+    &__left {
+        flex-basis: 43%;
+        text-align: left;
+
+        h3 {
+            margin: 8px 0 24px 0;
+            font-weight: 400;
+            line-height: 130%;
+
+            @media #{$desktop} {
+                margin: 16px 0 40px 0;
+            }
+
+            strong {
+                font-weight: 700;
+            }
+        }
+    
+        .more-btn {
+            margin: 48px auto 14px auto;
+
+            @media #{$desktop} {
+                margin: 62px 0 14px 0;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .small-btn {
+            justify-content: initial;
+        }
+
+        p {
+            font-weight: 400;
+            margin-bottom: 24px;
+            line-height: 160%;
+        }
+
+        ul {
+            margin-bottom: 24px;
+            line-height: 150%;
+        }
+    }
+
+    &__right {
+        flex-basis: 51%;
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            max-height: 380px;
+
+            @media #{$tablet} {
+                max-height: 550px;
+            }
+
+            @media #{$laptop} {
+                max-height: 650px;
+            }
+
+            @media #{$desktop} {
+                max-height: initial;
+            }
+        }
+    }
+}
+
+/* END TXT-IMG.SCSS */

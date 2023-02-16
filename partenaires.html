@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFR - Partenaires</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/popin.js" defer></script>
+    <script src="js/tabs.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="header__mobile container">
+            <a href="index.html">
+                <img src="assets/images/logo-ocre.svg" alt="Logo MFR" class="logo">
+            </a>
+            <button class="burger"></button>
+        </div>
+        <div class="header__toggle">
+            <div class="header__bottom">
+                <div class="menu">
+                    <div class="container">
+                        <a href="index.html" class="-desktop">
+                            <img src="assets/images/logo-ocre.svg" alt="Logo MFR" class="logo">
+                        </a>
+                        <ul class="links">
+                            <!-- <li>
+                                <a href="">Qui sommes-nous</a>
+                            </li> -->
+                            <li class="parent">
+                                Formations
+                                <div class="submenu">
+                                    <div class="container">
+                                        <article>
+                                            <a href="presentation.html">
+                                                <div class="image">
+                                                    <img src="assets/images/hero-presentation.jpeg" loading="lazy">
+                                                </div>
+                                                <div>
+                                                    <p class="title">Présentation</p>
+                                                    <p>Notre modèle associatif vous intrigue ? Venez l’explorer en détail avec nous.</p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                        <article>
+                                            <a href="presentation.html#comment-trouver-formation" class="submenu2">
+                                                <div class="image">
+                                                    <img src="assets/images/submenu2.jpg" loading="lazy">
+                                                </div>
+                                                <div>
+                                                    <p class="title">Comment trouver une formation ?</p>
+                                                    <p>Vous avez besoin d’un coup de pouce pour trouver votre formation ? C’est par ici.</p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                        <article>
+                                            <a href="presentation.html#secteurs-formation" class="submenu3">
+                                                <div class="image">
+                                                    <img src="assets/images/submenu3.jpg" loading="lazy">
+                                                </div>
+                                                <div>
+                                                    <p class="title">Secteurs de formations</p>
+                                                    <p>Découvrez nos 18 secteurs métiers et plus de 350 qualifications.</p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="contact.html">Nous contacter</a>
+                            </li>
+                        </ul>
+                        <a href="trouver-formation.html" class="btn">Trouver une formation</a>
+                    </div>
+                </div>
+                <div class="brush"></div>
+            </div>
+            <div class="header__top">
+                <a href="https://mvt.mfr.fr/index.php/category/articles/" target="_blank" class="preheader-link -external">Actualités MVT</a>
+                <!-- <a href="recrutement.html" class="preheader-link">Recrutement</a> -->
+                <a href="partenaires.html" class="preheader-link">Partenaires</a>
+                <!-- <a href="" target="_blank" class="preheader-link -external">Presse</a> -->
+                <a href="mymfr.html" target="_blank" class="preheader-link -external">My MFR</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- BLOC TEXT -->
+        <section class="text-bloc">
+            <div class="container">
+                <span class="uptitle">partenaires</span>
+                <h1>
+                    Nos partenaires /
+                    <br><span>Nos contributions</span>
+                </h1>
+                <p class="subtitle">
+                    Nos Maisons peuvent compter sur le soutien et l’expertise de nombreux partenaires. En retour, nous leur proposons aussi de les éclairer et de les accompagner pour former et accompagner un maximum de personnes vers la réussite.Un grand merci à toutes celles et ceux qui nous font confiance.
+                </p>
+            </div>
+        </section>
+
+        <!-- BLOC PARTNER -->
+        <section class="partner-bloc -full">
+
+            <div class="filter">
+                <label>Filtrer les partenaires</label>
+                <section class="dropdown">
+                    <select>
+                        <option value="tab-1">Ministères, administration et collectivités territoriales</option>
+                        <option value="tab-2">Les partenaires professionnels et associatifs</option>
+                        <option value="tab-3">Les partenaires des maisons familiales dans le domaine de la formation</option>
+                    </select>
+                </section>
+            </div>
+          
+            <!-- Overlay (si popin) -->
+            <!-- <div class="overlay"></div> -->
+            <div class="container">
+                <ul>
+                    <div class="grid tab-content current" id="tab-1">
+                        <!-- Popin -->
+                        <!-- <li>
+                            <img class="partner-logo" src="assets/images/logo-onisep.svg" alt="">
+                            <div class="popin">
+                                <div class="close-btn">Fermer</div>
+                                <div class="popin__container">
+                                    <div class="title">
+                                        <img src="assets/images/logo-onisep.svg">
+                                        <div>
+                                            <span class="uptitle">Partenaires Formations</span>
+                                            <h2>Onisep</h2>
+                                            <p class="subtitle">Catégorie ou courte description.</p>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <div>
+                                            <h3>Présentation</h3>
+                                            <p>Exsistit autem hoc loco quaedam quaestio subdifficilis, num quando amici novi, digni amicitia, veteribus sint anteponendi, ut equis vetulis teneros anteponere solemus. Indigna homine dubitatio! Non enim debent esse amicitiarum sicut aliarum rerum satietates; veterrima quaeque, ut ea vina, quae vetustatem ferunt, esse debet suavissima; verumque illud est, quod dicitur, multos modios salis simul edendos esse, ut amicitiae munus expletum sit.</p>
+                                        </div>
+                                        <div>
+                                            <h3>Interventions / Champ d’actions du partenariat</h3>
+                                            <ul>
+                                                <li class="actions">Exsistit autem hoc loco quaedam</li>
+                                                <li class="actions">Quaestio subdifficilis, num quando amici novi, digni amicitia</li>
+                                                <li class="actions">Exsistit autem hoc loco quaedam</li>
+                                                <li class="actions">Quaestio subdifficilis, num quando amici novi, digni amicitia</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="btn-with-text">
+                                        <a href="" class="text"><p>Voir <span>le site</span></p></a>
+                                        <a href="" class="cta" role="button"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+                        <a href="https://agriculture.gouv.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/logo-ministere-agriculture.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.education.gouv.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/logo-ministere-education.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://travail-emploi.gouv.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/logo-ministere-travail.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.gouvernement.fr/thematique/sante-et-affaires-sociales" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/logo-ministere-affaires-sociales.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.sports.gouv.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/logo-ministere-villes-jeunesse-sport.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.gouvernement.fr/ministere-de-l-europe-et-des-affaires-etrangeres" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/logo-ministere-europe.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.afd.fr/fr" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/logo-afd.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://erasmus-plus.ec.europa.eu/fr" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/logo-erasmus.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://regions-france.org/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/logo-regions-france.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.amrf.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/logo-amrf.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                    </div>
+
+                    <div class="grid tab-content" id="tab-2">
+                        <a href="https://www.walt-asso.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/logo-walt.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://chambres-agriculture.fr/exploitation-agricole/developper-des-projets/projets-de-territoire/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/logo-agriculture-territoires.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.ag2rlamondiale.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/ag2r.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.cnp.fr/le-groupe-cnp-assurances" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/cnp-assurances.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.groupama.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/groupama.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.credit-cooperatif.coop/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/credit-cooperatif.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="http://www.cuma.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/cuma.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.jeunes-agriculteurs.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/jeunes-agriculteurs.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.fnsea.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/fnsea.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.msa.fr/lfp" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/mutualite-sociale-agricole.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.capeb.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/capeb.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.unaf.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/unaf.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.admr.org/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/admr.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.famillesrurales.org/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/familles-rurales.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.sportspourtous.org/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/ff-sports-pour-tous.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.fnadir.com/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/fnadir.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.akto.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/opcalia.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.ocapiat.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/fafsea.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://vivea.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/vivea.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                    </div>
+
+                    <div class="grid tab-content" id="tab-3">
+                        <a href="https://www.maformationagricole.com/HP/HPInternet.aspx" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/unrep.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.cneap.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/cneap.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.compagnons-du-devoir.com/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/compagnons-du-devoir.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.onisep.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/logo-onisep.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.cidj.com/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/cidj.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.reseau-canope.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/canope.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.letudiant.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/letudiant.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.onisep.fr/Ressources/Univers-Postbac/Postbac/Auvergne-Rhone-Alpes/Puy-de-Dome/institut-agro-enseignement-a-distance-ex-cnpr" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/cnpr.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://laventureduvivant.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/aventure-du-vivant.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://chlorofil.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/chlorofil.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.ifocap.fr/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/ifocap.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.apecita.com/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/apecita.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.anefa.org/" target="_blank">
+                            <li>
+                                <img class="partner-logo" src="assets/images/partenaires/anefa.svg" alt="">
+                                <div class="partner-overlay">
+                                    <div>
+                                        <p>Voir <strong>le site</strong> </p>
+                                        <img src="assets/images/hover.svg">
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                    </div>
+                </ul>
+                <!-- <div class="pagination">
+                    <a href="" class="cta -prev"></a>
+                    <a href="" class="page-numbers current">1</a>
+                    <a href="" class="page-numbers">2</a>
+                    <a href="" class="page-numbers">3</a>
+                    <a href="" class="page-numbers">4</a>
+                    <a href="" class="page-numbers">...</a>
+                    <a href="" class="cta -next"></a>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- BLOC CONTACT : "Vous souhaitez vous lancer dans l’aventure MFR ?" -->
+        <section class="contact-bloc -transition">
+            <div class="container">
+                <h2>Vous souhaitez vous lancer 
+                    <br><strong>dans l’aventure MFR ?</strong></h2>
+                <p>
+                    Être bien accompagné, ça commence dès maintenant ! 
+                    <br>Nos équipes sont à votre disposition pour répondre à vos questions.
+                </p>
+                <div class="btn-with-text">
+                    <a href="contact.html" class="text"><p>Nous <span>contacter</span></p></a>
+                    <a href="contact.html" class="cta" role="button"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="container">
+            <div class="footer__top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo-ocre.svg" alt="Logo MFR">
+                    </a>
+                    <p>Nos Maisons vous propose des formations par alternance à partir de la 4ème jusqu’au bac + 5 dans 18 secteurs d’activités.</p>
+                </div>
+                <div class="links">
+                    <ul>Menu
+                        <!-- <li>
+                            <a href="">Qui sommes-nous ?</a>
+                        </li> -->
+                        <li>
+                            <a href="presentation.html">Formations</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Nous contacter</a>
+                        </li>
+                    </ul>
+                    <ul>liens utiles
+                        <li>
+                            <a href="https://mvt.mfr.fr/index.php/category/articles/" target="_blank" class="-external">Actualités MVT</a>
+                        </li>
+                      <!--   <li>
+                            <a href="recrutement.html">Recrutement</a>
+                        </li> -->
+                        <li>
+                            <a href="partenaires.html">Partenaires</a>
+                        </li>
+                        <!-- <li>
+                            <a href="" target="_blank" class="-external">Presse</a>
+                        </li> -->
+                    </ul>
+                    <div class="buttons">
+                        <a href="trouver-formation.html" class="btn">Trouver une formation</a>
+                        <a href="mymfr.html" class="btn -mymfr" role="button">Accéder à my MFR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="links">
+                    @2022 MFR. All rights reserved
+                    <a href="mentions.html">Mentions légales</a>
+                    <a href="rgpd.html">RGDP</a>
+                    <a href="plan-de-site.html">Plan de site</a>
+                </div>
+                <div class="social">
+                    <a href="https://fr-fr.facebook.com/mfr.asso.fr/" target="_blank">
+                        <img src="assets/images/icon-facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/mfr_officiel/?hl=fr" target="_blank">
+                        <img src="assets/images/icon-instagram.svg" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    
+</body>
+</html>

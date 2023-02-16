@@ -1,0 +1,253 @@
+.compass {
+    position: relative;
+    margin: -1rem 0;
+
+    .background {
+        max-height: 930px;
+    }
+
+    .compass-inner {
+        position: absolute;
+        width: 420px;
+        height: 420px;
+        top: calc(50% - 210px);
+        left: calc(50% - 210px);
+
+        img {
+            height: 100%;
+            width: 100%;
+
+            &.north {
+                transform: rotate(-90deg);
+                transition: transform .6s;
+            }
+
+            &.east {
+                transform: rotate(0);
+                transition: transform .6s;
+            }
+
+            &.south {
+                transform: rotate(90deg);
+                transition: transform .6s;
+            }
+
+            &.west {
+                transform: rotate(-180deg);
+                transition: transform .6s;
+            }
+        }
+    }
+
+    .compass-rotate {
+        height: 510px;
+        width: 510px;
+        position: absolute;
+        top: calc(50% - 255px);
+        left: calc(50% - 255px);
+        border: 3px solid $yellow;
+        border-radius: 500px;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            height: 0;
+            width: 0;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-left: 16px solid $yellow;
+            position: absolute;
+            right: -16px;
+            top: calc(50% - 8px);
+        }
+
+        &.north {
+            transform: rotate(-90deg);
+            transition: transform .6s;
+        }
+
+        &.east {
+            transform: rotate(0);
+            transition: transform .6s;
+        }
+
+        &.south {
+            transform: rotate(90deg);
+            transition: transform .6s;
+        }
+
+        &.west {
+            transform: rotate(-180deg);
+            transition: transform .6s;
+        }
+    }
+
+    .compass-dash {
+        height: 590px;
+        width: 590px;
+        position: absolute;
+        top: calc(50% - 295px);
+        left: calc(50% - 295px);
+        border: 5px dotted white;
+        border-radius: 500px;
+    }
+
+    .compass-outter {
+        height: 650px;
+        width: 650px;
+        position: absolute;
+        top: calc(50% - 325px);
+        left: calc(50% - 325px);
+        border: 1px solid white;
+        border-radius: 500px;
+
+        span {
+            position: absolute;
+            border-radius: 24px;
+            width: 24px;
+            height: 24px;
+            background-color: $black;
+            border: 1px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            span {
+                display: inline-block;
+                border: 1px solid $yellow;
+                background-color: $yellow;
+                height: 14px;
+                width: 14px;
+                visibility: hidden;
+            }
+
+            &.active {
+                transition-duration: all .3s;
+                border-color: $yellow;
+
+                span {
+                    visibility: visible;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 0, 0.5);
+                opacity: 1;
+                transition: all 0.5s ease-out;
+            }
+
+            &.active::after {
+                width: 0;
+                height: 0;
+                opacity: 0;
+            }
+
+            &:not(.active)::after {
+                animation-name: sonar;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+                animation-direction: normal;
+            }
+        }
+
+        span.north {
+            top: -12px;
+            left: calc(50% - 12px);
+        }
+
+        span.east {
+            top: calc(50% - 12px);
+            right: -12px;
+        }
+
+        span.south {
+            bottom: -12px;
+            left: calc(50% - 12px);
+        }
+
+        span.west {
+            left: -12px;
+            top: calc(50% - 12px);
+        }
+
+        div.content {
+            position: absolute;
+            width: 510px;
+            height: 510px;
+            left: calc(50% - 255px);
+            top: calc(50% - 255px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity .3s;
+
+            p {
+                font-family: 'Roboto Slab';
+                font-size: 48px;
+                color: white;
+                text-align: center;
+            }
+
+            &.visible {
+                opacity: 1;
+                transition: opacity .6s;
+            }
+        }
+        .dir{
+            position: absolute;
+            padding: 1.5rem;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            &.north{
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -100%);
+            }
+            &.east{
+                top: 50%;
+                right: 0%;
+                transform: translate(100%, -50%);
+            }
+            &.west{
+                top: 50%;
+                left: 0%;
+                transform: translate(-100%, -50%);
+            }
+            &.south{
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 100%);
+            }
+            &.active{
+                color: $yellow;
+            }
+        }
+    }
+}
+
+@keyframes sonar {
+    0% {
+      transform: scale(0.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }

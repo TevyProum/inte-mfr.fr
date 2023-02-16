@@ -1,0 +1,267 @@
+/* START ABOUT.SCSS */
+
+.about {
+    background-color: $green;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 64px 0;
+    margin-top: -1px;
+
+    &::after {
+        content: '';
+        background: url(../../assets/images/border-green.svg);
+        background-repeat: repeat-x;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: -23px;
+        max-height: 24px;
+        transform: rotate(180deg);
+        z-index: 2;
+    }
+
+    &.-circled {
+        padding: 80px 0;
+
+        @media #{$tablet} {
+            padding: 146px 89px 125px 89px;
+        }
+
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            content: '';
+                background: url(../../assets/images/border-green.svg);
+                background-repeat: repeat-x;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: -23px;
+                max-height: 24px;
+        }
+
+        .subtitle {
+            margin: 24px auto 40px auto;
+        }
+
+        li {
+            div {
+                @media #{$tablet} {
+                    gap: 8px;
+                }
+
+                .image {
+                    width: 128px;
+                    height: 128px;
+                    border: 1px solid #90B68A;
+                    border-radius: 50%;
+                    margin-bottom: 24px;
+                }
+    
+                span {
+                    font-family: 'Roboto';
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 150%;
+                    text-align: center;
+                    color: white;
+                }
+    
+                p {
+                    font-family: 'Roboto';
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    h2 {
+        margin-top: 8px;
+    }
+
+    .subtitle {
+        font-family: 'Work Sans';
+        line-height: 160%;
+        max-width: 910px;
+        margin: 43px auto 66px auto;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @media #{$tablet} {
+            flex-direction: row;
+        }
+
+        li {
+            display: flex;
+            justify-content: center;
+            gap: 28px;
+            position: relative;
+
+            &::before {
+                display: none;
+            }
+
+            &:first-child {
+                &::before {
+                    display: none;
+                }
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+                max-width: 330px;
+
+                @media #{$tablet} {
+                    gap: 16px;
+                }
+
+                &::after {
+                    @media #{$laptop} {
+                        content: '';
+                        width: 9px;
+                        height: 9px;
+                        background: #2D4A28;
+                        border-radius: 50%;
+                        top: 100px;
+                        position: absolute;
+                        left: -35px;
+                    }
+                }
+
+                img {
+                    max-width: 48px;
+                    max-height: 48px;
+                    margin: auto;
+                }
+
+                span {
+                    font-family: 'Roboto Slab';
+                    font-weight: 500;
+                    font-size: 64px;
+                    line-height: 130%;
+                    text-align: center;
+                    color: $ocre;
+                }
+
+                p {
+                    font-family: 'Work Sans';
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 150%;
+
+                    @media #{$tablet} {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.-presentation {
+        background: url('../../assets/images/noise.png');
+        color: $black;
+        padding-top: 0;
+        padding-bottom: 74px;
+
+        @media #{$tablet} {
+            padding-bottom: 137px;
+        }
+
+        &::after {
+            display: none;
+        }
+
+        ul li div::after {
+            background: $black;
+        }
+    }
+}
+
+.know-more {
+    display: flex;
+    background: url('../../assets/images/mfr-home.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    color: white;
+    position: relative;
+
+    @media #{$tablet} {
+        height: 750px;
+    }
+
+    &::before {
+        content: '';
+        background: url(../../assets/images/noise.png), #000000;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+    }
+
+    video {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+
+        h2 {
+            font-size: 32px;
+            text-align: center;
+            max-width: 879px;
+            margin: auto;
+
+            @media #{$tablet} {
+                font-size: 56px;
+            }
+
+            strong {
+                font-weight: 600;
+            }
+        }
+
+        .more-hidden-btn {
+            margin: 40px auto 0 auto;
+            justify-content: center;
+
+            .text {
+                left: 0;
+                right: 0;
+                justify-content: center;
+
+                @media #{$tablet} {
+                    margin: auto;
+                }
+            }
+
+            &:hover {
+                .text {
+                    left: -114px;
+                }
+            }
+        }
+    }
+}
+
+/* END ABOUT.SCSS */

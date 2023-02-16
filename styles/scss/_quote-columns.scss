@@ -1,0 +1,109 @@
+/* START QUOTE-COLUMNS.SCSS */
+
+.quote-columns {
+    background: url('../../assets/images/quote-background.jpg');
+    padding: 90px 0;
+    position: relative;
+
+    @media #{$laptop} {
+        padding: 120px 0;
+    }
+    
+    .arrow {
+        margin-top: 48px;
+
+        &.-desktop {
+            display: none;
+        
+            @media #{$laptop} {
+                display: flex;
+                justify-content: initial;
+            }
+        }
+        
+        &.-mobile {
+            @media #{$laptop} {
+                display: none;
+            }
+        }
+    }
+
+    .container {
+        overflow: hidden;
+
+        @media #{$laptop} {
+            display: flex;
+            gap: 37px;
+        }
+
+        .quote-columns__left {
+            flex-basis: 40%;
+            text-align: center;
+            margin-bottom: 24px;
+
+            @media #{$laptop} {
+                text-align: left;
+                margin-bottom: 0;
+            }
+
+            h3 {
+                margin: 16px 0;
+                font-weight: 400;
+
+                @media #{$laptop} {
+                    margin: 16px 0 48px 0;
+                }
+
+                strong {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .quote-columns__right {
+            max-width: 692px;
+            margin: auto;
+
+            .quote__title {
+                padding: 0;
+                margin-bottom: 16px;
+
+                @media #{$laptop} {
+                    text-align: left;
+                    margin-bottom: 48px;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                &::after {
+                    display: none;
+                }
+            } 
+
+            .quote__text {
+                margin-bottom: 24px;
+                font-size: 14px;
+
+                @media #{$laptop} {
+                    margin-bottom: 32px;
+                }
+            }
+
+            .quote__author {
+                @media #{$laptop} {
+                    text-align: left;
+                }
+            }
+
+            .quote__description {
+                @media #{$laptop} {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+/* END QUOTE-COLUMNS.SCSS */

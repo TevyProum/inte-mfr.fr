@@ -1,0 +1,97 @@
+/* START TEXT-BLOC.SCSS */
+
+.text-bloc {
+    padding-top: 96px;
+    padding-bottom: 80px;
+    position: relative;
+
+    @media #{$tablet} {
+        padding-bottom: 96px;
+    }
+
+    .container {
+        max-width: 1232px;
+
+        .uptitle {
+            display: block;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 16px 0 48px 0;
+            font-weight: 600;
+            text-align: center;
+
+            @media #{$tablet} {
+                margin: 16px 0 72px 0;
+            }
+
+            span {
+                font-weight: 300;
+            }
+        }
+
+        h3 {
+            font-weight: §00;
+            font-size: 24px;
+            line-height: 130%;
+            margin: 56px 0 24px 0;
+            position: relative;
+            padding-left: 16px;
+            border-left: 1px solid $ocre;
+    
+            @media #{$tablet} {
+                margin: 40px 0 24px 0;
+            }
+        }
+    
+        p {
+            margin-bottom: 24px;
+
+            strong {
+                font-weight: 500;
+            }
+        }
+
+        .subtitle {
+            font-family: 'Work Sans';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            text-align: center;
+            margin: -24px 0 0 0;
+        }
+    }
+
+    &.-background {
+        background: url('../../assets/images/noise.png');
+        text-align: center;
+        padding-bottom: 0;
+
+        &::before {
+            content: '';
+            -webkit-mask: url(../../assets/images/border-background.svg) repeat-x;
+            mask: url(../../assets/images/border-background.svg) repeat-x;
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            background: url(../../assets/images/noise.png);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: -22px;
+            max-height: 24px;
+            z-index: 2;
+        }
+
+        h2 {
+            margin: 16px 0 40px 0;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* END TEXT-BLOC.SCSS */

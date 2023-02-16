@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFR - Présentation</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owlcarousel/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/owl.carousel.min.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/tabs.js" defer></script>
+    <script src="js/gsap.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="header__mobile -white container">
+            <a href="index.html">
+                <img src="assets/images/logo-ocre.svg" alt="Logo MFR" class="logo">
+            </a>
+            <button class="burger"></button>
+        </div>
+        <div class="header__toggle">
+            <div class="header__bottom -white">
+                <div class="menu">
+                    <div class="container">
+                        <a href="index.html" class="-desktop">
+                            <img src="assets/images/logo-ocre.svg" alt="Logo MFR" class="logo">
+                        </a>
+                        <ul class="links">
+                            <!-- <li>
+                                <a href="">Qui sommes-nous</a>
+                            </li> -->
+                            <li class="parent">
+                                Formations
+                                <div class="submenu">
+                                    <div class="container">
+                                        <article>
+                                            <a href="presentation.html">
+                                                <div class="image">
+                                                    <img src="assets/images/hero-presentation.jpeg" loading="lazy">
+                                                </div>
+                                                <div>
+                                                    <p class="title">Présentation</p>
+                                                    <p>Notre modèle associatif vous intrigue ? Venez l’explorer en détail avec nous.</p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                        <article>
+                                            <a href="presentation.html#comment-trouver-formation" class="submenu2">
+                                                <div class="image">
+                                                    <img src="assets/images/submenu2.jpg" loading="lazy">
+                                                </div>
+                                                <div>
+                                                    <p class="title">Comment trouver une formation ?</p>
+                                                    <p>Vous avez besoin d’un coup de pouce pour trouver votre formation ? C’est par ici.</p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                        <article>
+                                            <a href="presentation.html#secteurs-formation" class="submenu3">
+                                                <div class="image">
+                                                    <img src="assets/images/submenu3.jpg" loading="lazy">
+                                                </div>
+                                                <div>
+                                                    <p class="title">Secteurs de formations</p>
+                                                    <p>Découvrez nos 18 secteurs métiers et plus de 350 qualifications.</p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="contact.html">Nous contacter</a>
+                            </li>
+                        </ul>
+                        <a href="trouver-formation.html" class="btn">Trouver une formation</a>
+                    </div>
+                </div>
+                <div class="brush"></div>
+            </div>
+            <div class="header__top -white">
+                <a href="https://mvt.mfr.fr/index.php/category/articles/" target="_blank" class="preheader-link -external">Actualités MVT</a>
+                <!-- <a href="recrutement.html" class="preheader-link">Recrutement</a> -->
+                <a href="partenaires.html" class="preheader-link">Partenaires</a>
+                <!-- <a href="" target="_blank" class="preheader-link -external">Presse</a> -->
+                <a href="mymfr.html" target="_blank" class="preheader-link -external">My MFR</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero -tabs">
+            <img class="image" src="assets/images/hero-presentation.jpeg">
+            <div class="container">
+                <span class="uptitle">Formations</span>
+                <h1>
+                    <strong>Explorer les possibles</strong> 
+                    <br>pour construire son projet de vie
+                </h1>
+                <div class="subtitle">
+                    <p class="subtitle-content current" id="subtitle-1">
+                        Certains jeunes se posent très vite la question de leur entrée dans la vie active. D’autres ont envie d’apprendre autrement, d’être au contact avec le terrain, d’explorer le monde de l’entreprise. En MFR, c’est possible ! Parce qu’il n’est jamais trop tôt pour prendre en main son avenir et trouver sa voie. 
+                    </p>
+                    <p class="subtitle-content" id="subtitle-2">
+                        430 Maisons, 350 qualifications... Vous allez forcément trouver une formation qui va vous plaire chez nous. Et nous serons ravis de vous accueillir pour partager un petit bout de chemin !</p>
+                    <p class="subtitle-content" id="subtitle-3">
+                        Offrez-vous la possibilité de vous épanouir en apprenant un métier qui vous passionne aux côtés d’équipes et de professionnels présents jour après jour pour vous.
+                    </p>
+                </div>
+
+                <section class="tabs -desktop">
+                    <div data-tab="tab-1" data-subtitle="subtitle-1" class="tab-filter active">
+                        Présentation
+                    </div>
+                    <div data-tab="tab-2" data-subtitle="subtitle-2" class="tab-filter">
+                        Comment trouver une formation
+                    </div>
+                    <div data-tab="tab-3" data-subtitle="subtitle-3" class="tab-filter">
+                        Secteurs de formations
+                    </div>
+                </section>
+        
+                <section class="dropdown -mobile">
+                    <select>
+                        <option value="tab-1">Présentation</option>
+                        <option value="tab-2">Comment trouver une formation</option>
+                        <option value="tab-3">Secteurs de formations</option>
+                    </select>
+                </section>
+            </div>
+        </section>
+
+        <!-------------------------------------------------------------------------------------------------- DEBUT ONGLET PRESENTATION (SUBMENU 1)------------------------------------------------------------------------------------------------------->
+        <section class="tab-content current" id="tab-1">
+
+            <div class="hidden-tab">
+                <!-- BLOC TEXT "Les MFR sont faites pour chacune et chacun d'entre nous" -->
+                <section class="text-bloc -background">
+                    <div class="container">
+                        <span class="uptitle">Présentation</span>
+                        <h2>
+                            <strong>Les MFR sont faites pour chacune
+                            <br>et chacun d'entre nous</strong> 
+                        </h2>
+                        <p>
+                            <strong>
+                                On peut y rentrer dès la 4e et ensuite tout au long de sa vie... 
+                                <br>Voire même plusieurs fois dans le cadre de reconversions ou de formations courtes). 
+                                <br>Parce que oui, en MFR, on apprend toute sa vie.
+                            </strong>
+                        </p>
+                    </div>
+                </section>
+
+                <!-- BLOC TXT-IMG "Classe de 4e et 3e : construisez votre projet" -->
+                <section class="txt-img">
+                    <div class="container">
+                        <div class="txt-img__left">
+                            <span class="uptitle">Classe d’orientation 4E/3E</span>
+                            <h3><strong>Classe de 4e et 3e :</strong>
+                                <br>construisez votre projet
+                            </h3>
+                            <p>
+                                <strong>Si votre enfant est scolarisé en classe de 5e ou de 4e au collège, il peut choisir de s'inscrire dans une Maison Familiale Rurale en classe de 4e ou 3e de l'enseignement agricole.</strong>
+                            </p>
+                            <p>
+                                La formation par alternance est rythmée par des périodes de formation à la MFR et des périodes de formation en entreprise. Les stages se déroulent sous statut scolaire dans des secteurs diversifiés. 
+                                Même si le conseil de classe ne formule pas de proposition d'orientation en fin de 5e ou de 4e, les parents peuvent toujours choisir la formation qui convient le mieux à leur enfant. de nos Maisons présente une offre de formation personnalisée et en accord avec les besoins du territoire. Nous travaillons main dans la main avec les acteurs locaux et nous sommes sur le terrain, jour après jour pour rester en prise avec la réalité.
+                            </p>
+                        </div>
+                        <div class="txt-img__right">
+                            <img src="assets/images/faq-famille.jpg" alt="" loading="lazy">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- BLOC ABOUT / CHIFFRES -->
+                <section class="about -presentation">
+                    <div class="container">
+                        <ul class="owl-carousel">
+                            <li>
+                                <div>
+                                    <span>85%</span>
+                                    <p>
+                                        des jeunes de 4e/3e ont choisi de venir en internat
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>40%</span>
+                                    <p>des sortants de classe de 3e de MFR choisissent la voie de l’apprentissage, soit en MFR, soit dans un autre CFA</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>53%</span>
+                                    <p>des jeunes de MFR ayant obtenu leur DNB en 2019 ont reçu une mention (source DGER)
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- BLOC TEXT-COLUMNS "Quelques informations et c’est parti." -->
+                <section class="text-columns -presentation">
+                    <div class="text-columns__columns container">
+                        <div class="column -left">
+                            <span class="uptitle">Conditions d’entrée de MFR</span>
+                            <p class="title">
+                                Quelques informations 
+                                <br><span>et c’est parti.</span>
+                            </p>
+                            <p>
+                                <strong>Durant le cycle de 4e et 3e MFR, chaque enfant réfléchit avec ses parents à son projet de vie. En fonction de ses centres d'intérêt et de ses envies, il pourra s'inscrire par la suite dans un parcours de formation qualifiant (CAP, Bac Pro). À la fin de la 3e, les élèves préparent le diplôme national du brevet (DNB).</strong>
+                            </p>
+                            <p>
+                                <strong>Les conditions d’entrée en 4e de MFR sont les suivantes :</strong>
+                            </p>
+                            <ul>
+                                <li>Avoir validé une classe de 5e</li>
+                                <li>Avoir 14 ans avant le 31 décembre de l'année de rentrée</li>
+                            </ul>
+                        </div>
+                        <div class="column -right">
+                            <h2>
+                                <strong>Les principaux atouts</strong> de ce parcours
+                            </h2>
+                            <ul class="owl-carousel">
+                                <article>
+                                    <div class="image">
+                                        <img src="assets/images/icon-adventure.svg">
+                                    </div>
+                                    <div class="column__text">
+                                        <p>
+                                            <strong>Faire l’apprentissage de la citoyenneté</strong>
+                                        </p>
+                                        <p>
+                                            Nous avons à cœur de former les jeunes, non seulement en les aidant à acquérir les connaissances et les gestes nécessaires à l’exercice d’un métier mais également en développant leur savoir-faire. Nous les encourageons à s’ouvrir aux autres et aux mondes.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="image">
+                                        <img src="assets/images/icon-brain.svg">
+                                    </div>
+                                    <div class="column__text">
+                                        <p>
+                                            <strong>Prendre confiance et assurer des responsabilités</strong>
+                                        </p>
+                                        <p>
+                                            L’alternance et l’internat sont des formidables leviers pour progresser. Ils permettent de développer à la fois des savoirs théoriques et pratiques. Être au contact des autres et du monde professionnel est idéal pour être en prise avec la réalité et faciliter l’apprentissage.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="image">
+                                        <img src="assets/images/icon-eye-scanner.svg">
+                                    </div>
+                                    <div class="column__text">
+                                        <p>
+                                            <strong>Bénéficier d’un climat éducatif et innovant</strong>
+                                        </p>
+                                        <p>
+                                            Les Maisons familiales rurales assurent un suivi individualisé. Chaque jeune est accompagné par une équipe éducative, des maîtres de stage attentifs et des parents mobilisés. Elles proposent un cadre de travail et une vie collective riche de sens et stimulante.
+                                        </p>
+                                    </div>
+                                </article>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- BLOC REDIRECTIONS -->
+                <section class="redirections -beige">
+                    <div class="container">
+                        <div class="redirections__columns">
+                            <div class="image">
+                                <img src="assets/images/icon-folder.svg">
+                            </div>
+                            <span class="uptitle">Ressources</span>
+                            <h3>
+                                <strong>Besoin de plus d’informations</strong>
+                                <br>sur les déroulement des formations pour 4e/3e ?
+                            </h3>
+                            <ul>
+                                Votre enfant aspire à vivre autre chose que ce que lui propose le collège ?
+                                <li>il a envie d'être actif</li>
+                                <li>il ne perçoit pas le lien entre ce qu'il apprend et sa vie future</li>
+                                <li>ses résultats scolaires ne le valorisent pas</li>
+                                <li>il est déjà motivé par un métier ou il recherche une orientation</li>
+                            </ul>
+                            <div class="small-btn">
+                                <a href="" class="text"><p>Voir <span>le catalogue</span></p></a>
+                                <a href="" class="cta" role="button"></a>
+                            </div>
+                        </div>
+                        <div class="redirections__columns -background">
+                            <span class="uptitle">Faq</span>
+                            <h3>
+                                <strong>Besoin de plus d’informations</strong>
+                                <br>sur les déroulement des formations pour 4e/3e ?
+                            </h3>
+                            <p>Accédez à My MFR et découvrez nos informations concernant vos questions fréquentes, la vie au quotidien et en entreprise, l’internat ...</p>
+                            <div class="small-btn -white">
+                                <a href="mymfr.html" class="text"><p>Accéder à <span>la FAQ Familles</span></p></a>
+                                <a href="mymfr.html" class="cta" role="button"></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- BLOC TXT-IMG "La seconde générale et technologique de l’enseignement agricole" -->
+                <section class="txt-img -reverse">
+                    <div class="container">
+                        <div class="txt-img__left">
+                            <span class="uptitle">Second GT</span>
+                            <h3>
+                                <strong>La seconde générale 
+                                    <br>et technologique 
+                                    <br>de l’enseignement agricole</strong>
+                            </h3>
+                            <p>
+                                <strong>La seconde générale et technologique de l'enseignement agricole est une classe de détermination d’une durée d’un an dont l’accès est possible après une 3ème avec la décision d’orientation favorable de l’établissement d’origine.Ce palier d’orientation, identique à celui de l’Education nationale, permet de confirmer le choix de l’élève grâce aux matières optionnelles et aux ateliers de pratique</strong>
+                            </p>
+                            <p>
+                                <strong>En fin de seconde, l’élève s’oriente :</strong>
+                            </p>
+                            <ul>
+                                <li>vers la voie technologique de l’Enseignement agricole : Bac technologique Sciences et Technologies de l’Aménagement et du Vivant</li>
+                                <li>vers la voie technologique de l’Education nationale : Autres Baccalauréats technologiques</li>
+                            </ul>
+                            <p>
+                                <span>Il peut rejoindre également la voie générale de l’Enseignement agricole : Bac Général S dominante Biologie - Ecologie ou plus exceptionnellement la voie générale de l’Education nationale : Bac S, L, ES</span>
+                            </p>
+                            <div class="small-btn">
+                                <a href="contact.html" class="text"><p>Je prends <span>contact</span></p></a>
+                                <a href="contact.html" class="cta" role="button"></a>
+                            </div>
+                        </div>
+                        <div class="txt-img__right">
+                            <img src="assets/images/faq-famille.jpg" alt="" loading="lazy">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- BLOC REDIRECTIONS -->
+                <section class="redirections -beige">
+                    <div class="container">
+                        <div class="redirections__columns">
+                            <div class="image">
+                                <img src="assets/images/icon-folder.svg">
+                            </div>
+                            <span class="uptitle">Ressources</span>
+                            <h3>
+                                <strong>
+                                    Téléchargez le catalogue des formations de seconde GT
+                                </strong>
+                            </h3>
+                            <p>
+                                Votre enfant aspire à vivre autre chose que ce que lui propose la plupart des lycées ? Offrez lui la possibilité de tester de nouvelles expériences en allant directement au contact du monde professionnel.
+                            </p>
+                            <div class="small-btn">
+                                <a href="" class="text"><p>Voir <span>le catalogue</span></p></a>
+                                <a href="" class="cta" role="button"></a>
+                            </div>
+                        </div>
+                        <div class="redirections__columns -background">
+                            <span class="uptitle">Faq</span>
+                            <h3>
+                                <strong>Besoin de plus d’informations</strong>
+                                <br>sur les déroulement des formations pour la seconde GT ?</h3>
+                            <p>Accéder à My MFR et découvrer nos informations concernant vos questions fréquentes, la vie au quotidien et en entreprise, l’internat ...</p>
+                            <div class="small-btn -white">
+                                <a href="mymfr.html" class="text"><p>Accéder à <span>la FAQ Familles</span></p></a>
+                                <a href="mymfr.html" class="cta" role="button"></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- BLOC QUOTE-COLUMNS -->
+                <!-- <section class="quote-columns">
+                    <div class="container">
+                        <div class="quote-columns__left">
+                            <span class="uptitle">Second GT</span>
+                            <h3>
+                                <strong>Ils ont fait le choix de MFR</strong> pour trouver leur voie
+                            </h3>
+                            <p>
+                                En MFR, nous cultivons les réussites. Des réussites plurielles, propres à chaque individu.
+                            </p>
+                            <div class="arrow -quote -desktop"></div>
+                        </div>
+                        <div class="quote-columns__right">
+                            <div class="owl-carousel">
+                                <article>
+                                    <p class="quote__title">"Ça a été vraiment une grande chance. Un grand bonheur"</p>
+                                    <p class="quote__text">
+                                        Je suis encore convaincue que son père et moi-même avons fait le bon choix de diriger Charlotte en MFR. (...)
+                                        Tout était extrêmement positif même dans son comportement, au niveau de l’école, dans son travail. 
+                                        Et je l’entends encore une fois me dire “maman, j’ai une super note, tu te rends compte c’est la première fois que ça m’arrive”. 
+                                        J’ai trouvé ça fabuleux. C’est redonner confiance à la personne.(...) C’est positif pour l’enfant et pour les parents. 
+                                        Pour nous, c’était beaucoup plus serein de sentir notre fille apaisée dans un climat qui lui correspondait, qui était vraiment tout ce qu’elle n’avait jamais connu en fait, tout simplement. 
+                                        (...) Maintenant je suis tellement impliquée et convaincue que c’est vraiment l’école “pas que de la dernière chance” mais une école autrement et une école tellement agréable pour les enfants qu’il faut absolument promouvoir les MFR.
+                                        Retrouver le témoignage complet de valérie en <a href="">cliquant ici</a>
+                                    </p>
+                                    <p class="quote__author">Valérie</p>
+                                    <p class="quote__description">mère de Charlotte, élève en MFR</p>
+                                </article>
+                                <article>
+                                    <p class="quote__title">"Ça a été vraiment une grande chance. Un grand bonheur"</p>
+                                    <p class="quote__text">
+                                        Je suis encore convaincue que son père et moi-même avons fait le bon choix de diriger Charlotte en MFR. (...)
+                                        Tout était extrêmement positif même dans son comportement, au niveau de l’école, dans son travail. 
+                                        Et je l’entends encore une fois me dire “maman, j’ai une super note, tu te rends compte c’est la première fois que ça m’arrive”. 
+                                        J’ai trouvé ça fabuleux. C’est redonner confiance à la personne.(...) C’est positif pour l’enfant et pour les parents. 
+                                        Pour nous, c’était beaucoup plus serein de sentir notre fille apaisée dans un climat qui lui correspondait, qui était vraiment tout ce qu’elle n’avait jamais connu en fait, tout simplement. 
+                                        (...) Maintenant je suis tellement impliquée et convaincue que c’est vraiment l’école “pas que de la dernière chance” mais une école autrement et une école tellement agréable pour les enfants qu’il faut absolument promouvoir les MFR.
+                                        Retrouver le témoignage complet de valérie en <a href="">cliquant ici</a>
+                                    </p>
+                                    <p class="quote__author">Valérie</p>
+                                    <p class="quote__description">mère de Charlotte, élève en MFR</p>
+                                </article>
+                                <article>
+                                    <p class="quote__title">"Ça a été vraiment une grande chance. Un grand bonheur"</p>
+                                    <p class="quote__text">
+                                        Je suis encore convaincue que son père et moi-même avons fait le bon choix de diriger Charlotte en MFR. (...)
+                                        Tout était extrêmement positif même dans son comportement, au niveau de l’école, dans son travail. 
+                                        Et je l’entends encore une fois me dire “maman, j’ai une super note, tu te rends compte c’est la première fois que ça m’arrive”. 
+                                        J’ai trouvé ça fabuleux. C’est redonner confiance à la personne.(...) C’est positif pour l’enfant et pour les parents. 
+                                        Pour nous, c’était beaucoup plus serein de sentir notre fille apaisée dans un climat qui lui correspondait, qui était vraiment tout ce qu’elle n’avait jamais connu en fait, tout simplement. 
+                                        (...) Maintenant je suis tellement impliquée et convaincue que c’est vraiment l’école “pas que de la dernière chance” mais une école autrement et une école tellement agréable pour les enfants qu’il faut absolument promouvoir les MFR.
+                                        Retrouver le témoignage complet de valérie en <a href="">cliquant ici</a>
+                                    </p>
+                                    <p class="quote__author">Valérie</p>
+                                    <p class="quote__description">mère de Charlotte, élève en MFR</p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="arrow -quote -mobile"></div>
+                    </div>
+                </section> -->
+
+                <!-- BLOC ABOUT : "Pour s’inscrire : comment ça marche ?" -->
+                <section class="about -circled">
+                    <div class="container">
+                        <span class="uptitle">Trouver une MFR</span>
+                        <h2><strong>Pour s’inscrire : comment ça marche ?</strong></h2>
+                        <p class="subtitle">Il vous suffit de remplir vos critères de prédilection et de lancer la recherche.</p>
+                        <ul class="owl-carousel">
+                            <li>
+                                <div>
+                                    <div class="image">
+                                        <img src="assets/images/icon-verify.svg">
+                                    </div>
+                                    <span>Je trouve ma formation</span>
+                                    <p>Je renseigne mes critères pour trouver ma formation. Géolocalisation, secteur d’activité, niveau de formation...</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="image">
+                                        <img src="assets/images/icon-house.svg">
+                                    </div>
+                                    <span>Je choisis ma MFR</span>
+                                    <p>J’indique mes coordonnées pour que la MFR de mon choix puisse me recontacter.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="image">
+                                        <img src="assets/images/icon-contact.svg">
+                                    </div>
+                                    <span>Votre MFR vous recontacte</span>
+                                    <p>Elle vous donnera directement l’ensemble des informations nécessaire pour prendre votre décision et procéder si vous le souhaiter à l’inscription.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- BLOC BACKGROUND : "Prêt à vous lancer dans l’aventure en trouvant la formation qui vous ressemble ?" -->
+                <section class="background-bloc">
+                    <div class="container">
+                        <div class="background-bloc__text -large">
+                            <span class="uptitle">Trouver une formation</span>
+                            <h2>
+                                <strong>Prêt à vous lancer dans l’aventure</strong> en trouvant la formation qui vous ressemble ?
+                            </h2>
+                        </div>
+                        <div class="black-btn">
+                            <a href="trouver-formation.html" class="text"><p><span>Trouver une</span> formation</p></a>
+                            <a href="trouver-formation.html" class="cta" role="button"></a>
+                        </div>
+                    </div>
+                    <img src="assets/images/compass.svg" alt="">
+                </section>
+
+                <!-- BLOC CONTACT : "Vous souhaitez vous lancer dans l’aventure MFR ?" -->
+                <section class="contact-bloc">
+                    <div class="container">
+                        <h2>Vous souhaitez vous lancer 
+                            <br><strong>dans l’aventure MFR ?</strong></h2>
+                        <p>
+                            Être bien accompagné, ça commence dès maintenant ! 
+                            <br>Nos équipes sont à votre disposition pour répondre à vos questions.
+                        </p>
+                        <div class="btn-with-text">
+                            <a href="contact.html" class="text"><p>Nous <span>contacter</span></p></a>
+                            <a href="contact.html" class="cta" role="button"></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </section>
+
+        <!-------------------------------------------------------------------------------------------- DEBUT ONGLET COMMENT TROUVER UNE FORMATION (SUBMENU 2) ----------------------------------------------------------------------------------------------->
+        <section class="tab-content" id="tab-2">
+
+            <div class="hidden-tab">
+                <!-- BLOC TXT-IMG : "Comment trouver une formation" -->
+                <section class="txt-img -reverse -white">
+                    <div class="container">
+                        <div class="txt-img__left">
+                            <span class="uptitle">Comment trouver une formation</span>
+                            <h3>Votre formation, 
+                                <br><strong>votre future Maison</strong>
+                            </h3>
+                            <p>
+                                <strong>C’est ici que tout commence. Vous allez pouvoir trouver la formation dont vous avez besoin grâce à notre moteur de recherche. En renseignant, 1, 2 ou 3 critères, vous accéderez à une liste des formations dispensées dans nos Maisons.</strong>
+                            </p>
+                            <p>
+                                Chacune de nos Maisons présente une offre de formation personnalisée et en accord avec les besoins du territoire. Nous travaillons main dans la main avec les acteurs locaux et nous sommes sur le terrain, jour après jour pour rester en prise avec la réalité.
+                            </p>
+                            <p>
+                                Cette connaissance approfondie de nos territoires, couplée à notre capacité à innover et à réinventer nous permet de gagner en pertinence. Grâce à leur statut associatif, nos Maisons sont capables de prendre leurs propres décisions. Elles adaptent donc naturellement leur offre de formation au contexte.
+                            </p>
+                        </div>
+                        <div class="txt-img__right">
+                            <img src="assets/images/faq-famille.jpg" alt="" loading="lazy">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- BLOC ABOUT : "Trouver une MFR" -->
+                <section class="about -circled">
+                    <div class="container">
+                        <span class="uptitle">Trouver une MFR</span>
+                        <h2><strong>Rien de plus simple !</strong></h2>
+                        <p class="subtitle">Il vous suffit de remplir vos critères de prédilection et de lancer la recherche.</p>
+                        <ul class="owl-carousel">
+                            <li>
+                                <div>
+                                    <div class="image">
+                                        <img src="assets/images/icon-verify.svg">
+                                    </div>
+                                    <span>Je trouve ma formation</span>
+                                    <p>Je renseigne mes critères pour trouver ma formation. Géolocalisation, secteur d’activité, niveau de formation...</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="image">
+                                        <img src="assets/images/icon-house.svg">
+                                    </div>
+                                    <span>Je choisis ma MFR</span>
+                                    <p>J’indique mes coordonnées pour que la MFR de mon choix puisse me recontacter.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="image">
+                                        <img src="assets/images/icon-contact.svg">
+                                    </div>
+                                    <span>Votre MFR vous recontacte</span>
+                                    <p>Elle vous donnera directement l’ensemble des informations nécessaire pour prendre votre décision et procéder si vous le souhaiter à l’inscription.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- BLOC BACKGROUND : "Trouver une formation" -->
+                <section class="background-bloc">
+                    <div class="container">
+                        <div class="background-bloc__text -large">
+                            <span class="uptitle">Trouver une formation</span>
+                            <h2>
+                                <strong>Prêt à vous lancer dans l’aventure</strong> en trouvant la formation qui vous ressemble ?
+                            </h2>
+                        </div>
+                        <div class="black-btn">
+                            <a href="trouver-formation.html" class="text"><p><span>Trouver une</span> formation</p></a>
+                            <a href="trouver-formation.html" class="cta" role="button"></a>
+                        </div>
+                    </div>
+                    <img src="assets/images/compass.svg" alt="">
+                </section>
+
+                <!-- BLOC REDIRECTIONS -->
+                <section class="redirections">
+                    <div class="container">
+                        <div class="redirections__columns">
+                            <div class="image">
+                                <img src="assets/images/icon-folder.svg">
+                            </div>
+                            <span class="uptitle">Tutorial Vidéo</span>
+                            <h3>Aidez-vous de la vidéo 
+                                <br>pour utiliser au mieux 
+                                <br>notre moteur de recherche</h3>
+                            <p>Trouvez votre formation grâce à notre outil de recherche comportant une grille de crtières et une carte interactive.</p>
+                            <div class="small-btn -video">
+                                <a href="" class="text"><p>Voir la <span>vidéo</span></p></a>
+                                <a href="" class="cta" role="button"></a>
+                            </div>
+                        </div>
+                        <div class="redirections__columns -background">
+                            <span class="uptitle">MY MFR</span>
+                            <h3>Besoin de plus d’informations sur les déroulement des formations ?</h3>
+                            <p>Accéder à My MFR et découvrer nos informations concernant vos questions fréquentes, la vie au quotidien et en entreprise, l’internat ...</p>
+                            <div class="small-btn -white">
+                                <a href="mymfr.html" class="text"><p>Accéder à <span>My MFR</span></p></a>
+                                <a href="mymfr.html" class="cta" role="button"></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </section>
+
+        <!-------------------------------------------------------------------------------------------- DEBUT ONGLET SECTEURS DE FORMATIONS (SUBMENU3) ----------------------------------------------------------------------------------------------->
+        <section class="tab-content" id="tab-3">
+
+            <div class="hidden-tab">
+                <section class="list container">
+                    <div class="list__title">
+                        <span class="uptitle">Secteurs de formations</span>
+                        <h2>
+                            <strong>18 secteurs d’activités</strong>
+                        </h2>
+                        <p>
+                            Se former en alternance en MFR, c’est une expérience unique. Vous pouvez compter sur l’accompagnement personnalisé de nos équipes, le professionnalisme de notre réseau de maîtres de stage et d’acteurs locaux.
+                        </p>
+                    </div>
+                    <ul class="list__items">
+                        <li>
+                            <a href="secteur-agriculture.html">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="assets/images/sectors1.jpg">
+                                    </div>
+                                    <div class="card__title">
+                                        <p><span>01</span>/18</p>
+                                        <h3>Agriculture
+                                            <br>et élevage</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="secteur-services-aux-personnes.html">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="assets/images/sectors2.jpg">
+                                    </div>
+                                    <div class="card__title">
+                                        <p><span>02</span>/18</p>
+                                        <h3>Services 
+                                            <br>à la personne</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="secteur-cheval.html">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="assets/images/sectors3.jpeg">
+                                    </div>
+                                    <div class="card__title">
+                                        <p><span>03</span>/18</p>
+                                        <h3>Métiers 
+                                            <br>du cheval</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="secteur-tourisme.html">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="assets/images/sectors4.jpg">
+                                    </div>
+                                    <div class="card__title">
+                                        <p><span>04</span>/18</p>
+                                        <h3>Accueil, tourisme,
+                                            animation</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="secteur-comptabilite.html">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="assets/images/sectors5.jpg">
+                                    </div>
+                                    <div class="card__title">
+                                        <p><span>05</span>/18</p>
+                                        <h3>Comptabilité, gestion, 
+                                            secrétariat, bureautique,
+                                            informatique</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="secteur-vente.html">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="assets/images/sectors6.jpg">
+                                    </div>
+                                    <div class="card__title">
+                                        <p><span>06</span>/18</p>
+                                        <h3>Commerce, vente
+                                            magasinage</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="secteur-horticulture.html">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="assets/images/sectors7.jpg">
+                                    </div>
+                                    <div class="card__title">
+                                        <p><span>07</span>/18</p>
+                                        <h3>Horticulture, 
+                                            <br>Arboriculture</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="secteur-viticulture.html">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="assets/images/sectors8.jpeg">
+                                    </div>
+                                    <div class="card__title">
+                                        <p><span>08</span>/18</p>
+                                        <h3>Viticulture,
+                                            <br>Oenologie</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="secteur-elevage-specialise.html">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="assets/images/sectors9.jpg">
+                                    </div>
+                                    <div class="card__title">
+                                        <p><span>09</span>/18</p>
+                                        <h3>Élevage spécialisé, 
+                                            <br>Soin aux animaux, 
+                                            <br>Aquaculture</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="secteur-mecanique.html">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="assets/images/sectors10.jpg">
+                                    </div>
+                                    <div class="card__title">
+                                        <p><span>10</span>/18</p>
+                                        <h3>Mécanique, maintenance, conduite et aéronautique</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="secteur-amenagement-paysager.html">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="assets/images/sectors11.jpg">
+                                    </div>
+                                    <div class="card__title">
+                                        <p><span>11</span>/18</p>
+                                        <h3>Aménagement paysager, des jardins et espaces verts</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="secteur-environnement.html">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="assets/images/sectors12.jpg">
+                                    </div>
+                                    <div class="card__title">
+                                        <p><span>12</span>/18</p>
+                                        <h3>Environnement, faune sauvage, espace rural</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="secteur-foret.html">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="assets/images/sectors13.jpg">
+                                    </div>
+                                    <div class="card__title">
+                                        <p><span>13</span>/18</p>
+                                        <h3>Forêt, bûcheronnage, sylviculture</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="secteur-electricite.html">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="assets/images/sectors14.jpg">
+                                    </div>
+                                    <div class="card__title">
+                                        <p><span>14</span>/18</p>
+                                        <h3>Electricité
+                                            <br>et électronique</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="secteur-batiment.html">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="assets/images/sectors15.jpg">
+                                    </div>
+                                    <div class="card__title">
+                                        <p><span>15</span>/18</p>
+                                        <h3>Bâtiment
+                                            <br>et bois</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="secteur-agroalimentaire.html">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="assets/images/sectors16.jpg">
+                                    </div>
+                                    <div class="card__title">
+                                        <p><span>16</span>/18</p>
+                                        <h3>Bouche,
+                                            <br>agroalimentaire</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="secteur-hotellerie.html">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="assets/images/sectors17.jpg">
+                                    </div>
+                                    <div class="card__title">
+                                        <p><span>17</span>/18</p>
+                                        <h3>Hôtellerie,
+                                            <br>Restauration</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="secteur-securite.html">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="assets/images/sectors18.jpg">
+                                    </div>
+                                    <div class="card__title">
+                                        <p><span>18</span>/18</p>
+                                        <h3>Sécurité</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="container">
+            <div class="footer__top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo-ocre.svg" alt="Logo MFR">
+                    </a>
+                    <p>Nos Maisons vous propose des formations par alternance à partir de la 4ème jusqu’au bac + 5 dans 18 secteurs d’activités.</p>
+                </div>
+                <div class="links">
+                    <ul>Menu
+                        <!-- <li>
+                            <a href="">Qui sommes-nous ?</a>
+                        </li> -->
+                        <li>
+                            <a href="presentation.html">Formations</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Nous contacter</a>
+                        </li>
+                    </ul>
+                    <ul>liens utiles
+                        <li>
+                            <a href="https://mvt.mfr.fr/index.php/category/articles/" target="_blank" class="-external">Actualités MVT</a>
+                        </li>
+                      <!--   <li>
+                            <a href="recrutement.html">Recrutement</a>
+                        </li> -->
+                        <li>
+                            <a href="partenaires.html">Partenaires</a>
+                        </li>
+                        <!-- <li>
+                            <a href="" target="_blank" class="-external">Presse</a>
+                        </li> -->
+                    </ul>
+                    <div class="buttons">
+                        <a href="trouver-formation.html" class="btn">Trouver une formation</a>
+                        <a href="mymfr.html" class="btn -mymfr" role="button">Accéder à my MFR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="links">
+                    @2022 MFR. All rights reserved
+                    <a href="mentions.html">Mentions légales</a>
+                    <a href="rgpd.html">RGDP</a>
+                    <a href="plan-de-site.html">Plan de site</a>
+                </div>
+                <div class="social">
+                    <a href="https://fr-fr.facebook.com/mfr.asso.fr/" target="_blank">
+                        <img src="assets/images/icon-facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/mfr_officiel/?hl=fr" target="_blank">
+                        <img src="assets/images/icon-instagram.svg" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    
+</body>
+</html>
